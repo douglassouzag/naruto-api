@@ -10393,6 +10393,10 @@ def pegarEp(episodio):
 
     return jsonify({'Erro': 'episódio não existe'}), 404
 
+@app.route('/', methods=['GET'])
+def home():
+    return "<h1>Naruto API!</h1>"
+
 if __name__ == '__main__':
     app.config['JSON_AS_ASCII'] = False
-    app.run(debug=True)
+    app.run(debug=True,port=5000)
