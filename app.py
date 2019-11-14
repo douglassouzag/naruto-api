@@ -10382,10 +10382,12 @@ arrayEpisodios = [
 ]
 
 @app.route('/episodios', methods=['GET'])
+@cross_origin()
 def listarEps():
     return jsonify(arrayEpisodios), 200
 
 @app.route('/episodio/<int:episodio>', methods=['GET'])
+@cross_origin()
 def pegarEp(episodio):
     for ep in arrayEpisodios:
         if ep['episodio'] == episodio:
@@ -10394,10 +10396,10 @@ def pegarEp(episodio):
     return jsonify({'Erro': 'episódio não existe'}), 404
 
 @app.route('/', methods=['GET'])
+@cross_origin()
 def home():
     return "<h1>Naruto API!</h1>"
 
 if __name__ == '__main__':
     app.config['JSON_AS_ASCII'] = False
-    CORS(app)
     app.run(debug=True,port=5000)
