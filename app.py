@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)
+CORS(app)
 
 arrayEpisodios = [
     {
@@ -10382,12 +10383,10 @@ arrayEpisodios = [
 ]
 
 @app.route('/episodios', methods=['GET'])
-@cross_origin()
 def listarEps():
     return jsonify(arrayEpisodios), 200
 
 @app.route('/episodio/<int:episodio>', methods=['GET'])
-@cross_origin()
 def pegarEp(episodio):
     for ep in arrayEpisodios:
         if ep['episodio'] == episodio:
@@ -10396,7 +10395,6 @@ def pegarEp(episodio):
     return jsonify({'Erro': 'episódio não existe'}), 404
 
 @app.route('/', methods=['GET'])
-@cross_origin()
 def home():
     return "<h1>Naruto API!</h1>"
 
