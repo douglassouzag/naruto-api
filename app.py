@@ -10399,4 +10399,5 @@ def home():
 
 if __name__ == '__main__':
     app.config['JSON_AS_ASCII'] = False
+    CORS(app)
     app.run(debug=True,port=5000)
