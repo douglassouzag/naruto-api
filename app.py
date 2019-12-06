@@ -3,12 +3,13 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-arrayEpisodios = [
+arrayEpisodios: [
     {
     "episodio": 1,
     "nome": "Volta para Casa",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/72/Back.PNG/revision/latest/scale-to-width-down/350?cb=20160103183455",
+    "source":"1ovgMMdsZFrT7Z2mvybY75lKzQ-F_peGo",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -30,6 +31,7 @@ arrayEpisodios = [
     "nome": "A Akatsuki se Move",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/cd/Sasori%2C_Deidara.PNG/revision/latest/scale-to-width-down/350?cb=20151225105221",
+    "source":"14E09733GNR5VyGh46cpV1QsPb9UAPy9G",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -54,6 +56,7 @@ arrayEpisodios = [
     "nome": "Os Frutos do Treinamento",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/fe/Cherry_Blossom_Shockwave.png/revision/latest/scale-to-width-down/350?cb=20160108090307",
+    "source":"11Lp4IyiIWSOHUn9f4sHwWgwtgCXnOv7t",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -73,6 +76,7 @@ arrayEpisodios = [
     "nome": "O Jinchuriki da Areia",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/55/Sand_Prison.png/revision/latest/scale-to-width-down/350?cb=20141123213501",
+    "source":"1wK3QSOE0qbl7A9qzw4ZLo6n4HmsiwUWD",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -92,6 +96,7 @@ arrayEpisodios = [
     "nome": "Como Kazekage...!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/83/The_Kazekage_Stands_Tall.PNG/revision/latest/scale-to-width-down/350?cb=20160108090808",
+    "source":"125fH9eMol_ME2WetZnuHxQbz04sE8BQj",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -111,6 +116,7 @@ arrayEpisodios = [
     "nome": "Missão Apurada",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/65/Mission_Cleared.PNG/revision/latest/scale-to-width-down/350?cb=20160108091007",
+    "source":"1j7UZ1mN-0odMzk36QWhd53xnyZWUW1wt",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -131,6 +137,7 @@ arrayEpisodios = [
     "nome": "Corra, Kankuro",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a5/Kankur%C5%8D.png/revision/latest/scale-to-width-down/350?cb=20160108091308",
+    "source":"14jSUYq_YdPRIJ_HwLR3kccGyS56UFy0S",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -148,6 +155,7 @@ arrayEpisodios = [
     "nome": "Time Kakashi se Prepara",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/cf/Team_Kakashi%2C_Deployed.PNG/revision/latest/scale-to-width-down/350?cb=20160108091449",
+    "source":"1MCp0L60Vgf5E-Otai81OJior6akg2Six",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -169,6 +177,7 @@ arrayEpisodios = [
     "nome": "Lágrimas de Jinchuriki",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d5/The_Jinch%C5%ABriki%27s_Tears.PNG/revision/latest/scale-to-width-down/350?cb=20160108091949",
+    "source":"1d7HmiFD_ngt7PHNUDVgrAx-yseVNEFH8",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -189,6 +198,7 @@ arrayEpisodios = [
     "nome": "Fuin Jutsu: Genryu Kyu Fujin",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/da/Nine_Phantom_Dragons_Consuming_Seals.png/revision/latest/scale-to-width-down/350?cb=20150917211315",
+    "source":"1cylfanIi-0VXiuXnlygK7tdpPuuQZbA_",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -216,6 +226,7 @@ arrayEpisodios = [
     "nome": "A Discípula da Ninja Médica",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/2e/Poison_Removal.PNG/revision/latest/scale-to-width-down/350?cb=20160108092604",
+    "source":"1HEP2V4B45qiYBthOuRqENeBwueOl-qfB",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -234,6 +245,7 @@ arrayEpisodios = [
     "nome": "A Decisão da Velhota Aposentada",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/0b/Granny%27s_Determination.PNG/revision/latest/scale-to-width-down/350?cb=20160108092733",
+    "source":"1sLejsHbHOmcYUYW4NjptiGUG6AAunBn7",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -261,6 +273,7 @@ arrayEpisodios = [
     "nome": "Encontros Predestinados",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/02/A_Meeting_With_Destiny.png/revision/latest/scale-to-width-down/350?cb=20160108093015",
+    "source":"1yh8WRaqxOkgRinI2cMgnmYbC65hWEtGQ",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -280,6 +293,7 @@ arrayEpisodios = [
     "nome": "O Crescimento de Naruto",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/ba/Naruto%27s_Growth_%28ep%29.PNG/revision/latest/scale-to-width-down/350?cb=20160108093202",
+    "source":"1lJbQorNoc1GO-YLRfl6kTgnlkrvI41pd",
     "personagens":[
         "Naruto Uzumaki",
         "Jiraiya",
@@ -297,6 +311,7 @@ arrayEpisodios = [
     "nome": "O Nome do Arma Secreta É...!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e8/Great_Ball_Rasengan.PNG/revision/latest/scale-to-width-down/350?cb=20160108094928",
+    "source":"1kpCKnqu0XVVNNQib1pEG4IqiOwZEwBj0",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -319,6 +334,7 @@ arrayEpisodios = [
     "nome": "O Segredo dos Jinchuriki",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/bc/The_Secret_of_Jinchuriki.PNG/revision/latest/scale-to-width-down/350?cb=20160108095558",
+    "source":"1NAHfe1vaQIzVfTMXQ7JE3OWA_uqmCSvG",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -346,6 +362,7 @@ arrayEpisodios = [
     "nome": "A Morte de Gaara!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/37/Akatsuki_extracting_Shukaku.png/revision/latest/scale-to-width-down/350?cb=20160108095648",
+    "source":"1O3GNkKfQpKRJi-1bsX8SpQMYODeWFBK4",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -372,6 +389,7 @@ arrayEpisodios = [
     "nome": "Invasão! Entrada Gancho Lateral",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/cc/Five-Seal_Barrier.PNG/revision/latest/scale-to-width-down/350?cb=20160108100119",
+    "source":"1IzMWL34mc6KeAhKAMAmY6D4_iqA3SVGf",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -394,6 +412,7 @@ arrayEpisodios = [
     "nome": "Armadilha Ativada! Os Inimigos do Time Guy",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e3/Mirrored_Sudden_Attacker_Technique_part_1.png/revision/latest/scale-to-width-down/350?cb=20160108100438",
+    "source":"1AvoMP4IkJs6M69pow85sSxGvNMwM9cuG",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -412,6 +431,7 @@ arrayEpisodios = [
     "nome": "Hiruko VS as Duas Kunoichi",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d6/Hiruko.png/revision/latest/scale-to-width-down/350?cb=20160103184812",
+    "source":"1C2tEzgdCQNAtCHOtyfh2tc90g7M9Axnd",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -426,6 +446,7 @@ arrayEpisodios = [
     "nome": "A Real Face de Sasori",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b1/Sasori%27s_Real_Face.png/revision/latest/scale-to-width-down/350?cb=20160108102833",
+    "source":"1CL_1JriA1EH3XXG1Lccir30Rk0EEBJhO",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -448,6 +469,7 @@ arrayEpisodios = [
     "nome": "A Carta na Manga da Chiyo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b9/Mother_and_Father.PNG/revision/latest/scale-to-width-down/350?cb=20160108103148",
+    "source":"19mUk94RWh0RSCzIRF-rQUkIQ7LWgPBTj",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -466,6 +488,7 @@ arrayEpisodios = [
     "nome": "Pai e Mãe",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b9/Mother_and_Father.PNG/revision/latest/scale-to-width-down/350?cb=20160108103148",
+    "source":"1MEULUKtXRgp25sJ9IOeCEXKXPWK4wawD",
     "personagens":[
         "Sakura Haruno",
         "Chiyo",
@@ -478,6 +501,7 @@ arrayEpisodios = [
     "nome": "Terceiro Kazekage",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Browse_icon.png/revision/latest?cb=20151125063353",
+    "source":"1M1FrfKOu4Sc8g9KKZg4_LTQPQVNXgrTY",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -497,6 +521,7 @@ arrayEpisodios = [
     "nome": "Três Minutos Entre a Vida e a Morte",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/71/Antidote.png/revision/latest/scale-to-width-down/350?cb=20160108104158",
+    "source":"1OgetfqYw0ZbsfBeTweR-8aGL9MZ-XhTE",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -511,6 +536,7 @@ arrayEpisodios = [
     "nome": "Dez Marionetes vs Cem Marionetes",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/06/Puppet_Fight_10_vs_100.png/revision/latest/scale-to-width-down/350?cb=20160108104514",
+    "source":"1nHijWIz5vCP5fTQXuNdZiALhN4WYfUi1",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -525,6 +551,7 @@ arrayEpisodios = [
     "nome": "Sonho que Não se Realizará",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/78/Sasori%27s_Final_Embrace.png/revision/latest/scale-to-width-down/350?cb=20160104145026",
+    "source":"1qRN3KpuPSOdrrM2IK4_yxFUp_namVLMg",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -540,6 +567,7 @@ arrayEpisodios = [
     "nome": "As Bestas que Ressuscitam",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/be/Yomigaeru_Kemono-tachi.png/revision/latest/scale-to-width-down/350?cb=20150722112553",
+    "source":"10TVMNgONTLD237oH9a4zZjv0x-gloo1x",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -556,6 +584,7 @@ arrayEpisodios = [
     "nome": "Kakashi Abre o Olho!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c8/Kamui1.PNG/revision/latest/scale-to-width-down/350?cb=20160108105245",
+    "source":"1xQp5ViEOFWUend5Zobob3zAdI-OO89n6",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -573,6 +602,7 @@ arrayEpisodios = [
     "nome": "A Estética do Momento",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/df/Suicide_Bombing_Clone.png/revision/latest/scale-to-width-down/350?cb=20170119100000",
+    "source":"1HfzJJjejKO9ZepWWbfVc2S7QvYVDjcZH",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -591,6 +621,7 @@ arrayEpisodios = [
     "nome": "Algo que se Herda",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/6b/%22The_Legacy%21%22.png/revision/latest/scale-to-width-down/350?cb=20160108110426",
+    "source":"1q9p-8F4pe5rZr7ou47oYnWEBHLy_Bk6P",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -612,6 +643,7 @@ arrayEpisodios = [
     "nome": "O Retorno do Kazekage",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/9f/Naruto_shakes_hands_with_Gaara.png/revision/latest/scale-to-width-down/350?cb=20160108110252",
+    "source":"1VpoERWMJ6VjiKA5N0rOOmFGneb1wpbI2",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -637,6 +669,7 @@ arrayEpisodios = [
     "nome": "Um Novo Objetivo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/04/Super_Beast_Imitation_Drawing.png/revision/latest/scale-to-width-down/350?cb=20160108115900",
+    "source":"1G_T0LOl6pehCwp_Lz-5wyGdf--HlhyoW",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -662,6 +695,7 @@ arrayEpisodios = [
     "nome": "Formação! O Novo Time Kakashi",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/90/Ink_Mist_Technique.PNG/revision/latest/scale-to-width-down/350?cb=20170118062527",
+    "source":"1TS6Uk3SfvKSQsZYSp-Xd8U1piyMhwW9I",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -681,6 +715,7 @@ arrayEpisodios = [
     "nome": "Parceiro Indesejado",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c4/An_Unnecessary_Addition_2.png/revision/latest/scale-to-width-down/350?cb=20160108120111",
+    "source":"1uu-so3uJ19DIPDrjFj5cFovMyOqt7LoJ",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -698,6 +733,7 @@ arrayEpisodios = [
     "nome": "O Sorriso Falso",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d3/Sai.png/revision/latest/scale-to-width-down/350?cb=20150825082721",
+    "source":"1_xjQt_vc0zxm-5s9hNGmnsMyNbaCIdPJ",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -714,6 +750,7 @@ arrayEpisodios = [
     "nome": "Sem Título",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/cb/Chapter_287.jpg/revision/latest/scale-to-width-down/318?cb=20100706042429",
+    "source":"1bMuQxsyRTtu9V2rwHI_No6qW4IiIh6UT",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -726,6 +763,7 @@ arrayEpisodios = [
     "nome": "Simulação",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Simulation.PNG/revision/latest/scale-to-width-down/350?cb=20160108120830",
+    "source":"1ZUaVs4vA7v21ShtMIJBIvUOydOHPPu4T",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -738,6 +776,7 @@ arrayEpisodios = [
     "nome": "Ponte Tenchi",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/4a/Tenchi_Bridge.png/revision/latest/scale-to-width-down/180?cb=20150826164358",
+    "source":"1Z4jTAorhTVVK4dEwpTVpgcSD8rJY971y",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -753,6 +792,7 @@ arrayEpisodios = [
     "nome": "A Kyuubi se Liberta!!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a5/Three-Tails_Naruto.PNG/revision/latest/scale-to-width-down/350?cb=20160108121553",
+    "source":"18hRI-qg5tfvkMBfdpMwrS3cOomwBty3H",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -770,6 +810,7 @@ arrayEpisodios = [
     "nome": "A Missão Super-Secreta Começa",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/ee/Wood_Clone_Creation.PNG/revision/latest/scale-to-width-down/350?cb=20160108122237",
+    "source":"1NXg4EsUyWk8yuMWMmDsM85h9l0f_o8v6",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -784,6 +825,7 @@ arrayEpisodios = [
     "nome": "Orochimaru VS Jinchuriki",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/ea/Orochimaru_fighting_Naruto.png/revision/latest/scale-to-width-down/350?cb=20140902045123",
+    "source":"1rQUbsTHBZOvMafCei5qO5NG0_y_G0iF5",
     "personagens":[
         "Sakura Haruno",
         "Sai",
@@ -797,6 +839,7 @@ arrayEpisodios = [
     "nome": "As Lágrimas da Sakura",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/66/Sakura%27s_Tears.png/revision/latest/scale-to-width-down/350?cb=20160108122803",
+    "source":"1waGn3LQ9CWCIt4WyfuvRiVHMWhNzzcS9",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -811,6 +854,7 @@ arrayEpisodios = [
     "nome": "As Verdades da Batalha",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b1/Sakura_Healing.png/revision/latest/scale-to-width-down/350?cb=20160101171928",
+    "source":"1fy7HPfaF2Z4vD8AIqFADHpynzxZVLhqB",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -825,6 +869,7 @@ arrayEpisodios = [
     "nome": "O Limite da Traição",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b5/The_Consequences_of_Betrayal.PNG/revision/latest/scale-to-width-down/350?cb=20160108123227",
+    "source":"1t1Au-TeTope9zsMXlXwBjUZJ6YJQXDFw",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -839,6 +884,7 @@ arrayEpisodios = [
     "nome": "A Página Inacabada",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/ed/The_Unfinished_Page.png/revision/latest/scale-to-width-down/350?cb=20160108123516",
+    "source":"1gq_PXvY8W9I6_cjoruj4WjHb0wjiCN6L",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -855,6 +901,7 @@ arrayEpisodios = [
     "nome": "Infiltração! O Esconderijo da Serpente",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/ba/Infiltration_The_Den_of_the_Snake%21.PNG/revision/latest/scale-to-width-down/350?cb=20160108123724",
+    "source":"1CJdoDmL-82WBuabQTcDHQzjbg4iARH0_",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -870,6 +917,7 @@ arrayEpisodios = [
     "nome": "Laços",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/ad/Sai_captured_by_Team_7.PNG/revision/latest/scale-to-width-down/350?cb=20160108123923",
+    "source":"1hzZvcN-ZLlHFowMVYxPsX1vf3q8Fl6Gu",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -882,6 +930,7 @@ arrayEpisodios = [
     "nome": "Algo Precioso",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d1/Something_Important....PNG/revision/latest/scale-to-width-down/350?cb=20160108124126",
+    "source":"1z26tjtHj67raLsr_2hFwj5kPqJE1b2LM",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -895,6 +944,7 @@ arrayEpisodios = [
     "nome": "O Conto do Livro Ilustrado",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/17/Sai%27s_Smile.png/revision/latest/scale-to-width-down/350?cb=20160108124320",
+    "source":"1P_JiYf3qKlEuYokNPzOUEkN17qiNoQgC",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -910,6 +960,7 @@ arrayEpisodios = [
     "nome": "Reunião",
     "filler": False,
     "thumbnail":"https://img1.ak.crunchyroll.com/i/spire4-tmb/9302ba866b7c620e9907b03535ac02b31229999837_fwide.jpg",
+    "source":"1pUajHtzy_7UaDoqrbo7x0bOeQeRZ5jgp",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -924,6 +975,7 @@ arrayEpisodios = [
     "nome": "O Poder Uchiha",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/bb/ChidoriKatana.png/revision/latest/scale-to-width-down/350?cb=20151230090504",
+    "source":"1iJdQjWHBLdaX8gFMtSYrR-c3DuuO2Kx-",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -938,6 +990,7 @@ arrayEpisodios = [
     "nome": "Título",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/fc/Chapter_310.jpg/revision/latest/scale-to-width-down/350?cb=20150206202217",
+    "source":"1s0IYcFh-UCfxxIyTe8nk7U0a3fQBnlq4",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -959,6 +1012,7 @@ arrayEpisodios = [
     "nome": "Pesadelo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/00/Nightmare.PNG/revision/latest/scale-to-width-down/350?cb=20160113190459",
+    "source":"1DFX2B7dXu6khg72ROjBDXLXBIqoyRRzg",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -979,6 +1033,7 @@ arrayEpisodios = [
     "nome": "Vento",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5f/Sage_Art_Wind_Release_Dust_Cloud.PNG/revision/latest/scale-to-width-down/180?cb=20150209084437",
+    "source":"1eTetZtCJkOuaq_yFR9d3aYW_QZHADPJy",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -992,6 +1047,7 @@ arrayEpisodios = [
     "nome": "Contorcer",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/68/Asuma_With_His_Chakra_Blades.PNG/revision/latest/scale-to-width-down/350?cb=20160216223830",
+    "source":"1mtGRIfgnaTsi9PlcJhKDWhMyeuUeyxyP",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1012,6 +1068,7 @@ arrayEpisodios = [
     "nome": "Retirado do Sono Eterno",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/3b/J%C5%ABha_Sh%C5%8D.png/revision/latest/scale-to-width-down/350?cb=20170115074723",
+    "source":"1_05C92pEhgtUUV2fZFLYkf7IrD_Yp-92",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1026,6 +1083,7 @@ arrayEpisodios = [
     "nome": "Solidão",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/26/Wind_Release_Beast_Wave_Violent_Wind_Palm.png/revision/latest/scale-to-width-down/350?cb=20160114165845",
+    "source":"1CYF7FRicPGNYWTsZg7RDDWN1vOliuYJP",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1041,6 +1099,7 @@ arrayEpisodios = [
     "nome": "Novo Inimigo",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c9/Earth_Release_Mutability.png/revision/latest/scale-to-width-down/350?cb=20160114170028",
+    "source":"1a2ocrRzqCc05MZ5I2rNnnLoNAkqLVkXX",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1061,6 +1120,7 @@ arrayEpisodios = [
     "nome": "Mutabilidade",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/83/Earth_Release_Bedrock_Coffin.png/revision/latest/scale-to-width-down/350?cb=20170115195352",
+    "source":"1OXpq0a7J4YZzpbifrjM9KAbY9FBtyas7",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1081,6 +1141,7 @@ arrayEpisodios = [
     "nome": "Contato",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/20/Execution_by_Kiss.png/revision/latest/scale-to-width-down/350?cb=20160115103024",
+    "source":"1rk8YXzGuX5yk_LMSck614jxO3gWZeW8t",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1099,6 +1160,7 @@ arrayEpisodios = [
     "nome": "Parceito de Time",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f9/Teammate.PNG/revision/latest/scale-to-width-down/350?cb=20160702074200",
+    "source":"1EeHq-vnDQNHMF1elX7eybteAWVdIXih7",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1123,6 +1185,7 @@ arrayEpisodios = [
     "nome": "Dois Reis",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/22/The_Two_Kings.PNG/revision/latest/scale-to-width-down/350?cb=20110213041949",
+    "source":"1NBHPjqgOnk8JUaD0Fw5-zAFi9l9C9O2T",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1143,6 +1206,7 @@ arrayEpisodios = [
     "nome": "Sinal das Chamas Negras",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/da/Sorahand1.png/revision/latest/scale-to-width-down/350?cb=20160702071400",
+    "source":"1D-GvX4hrig006kSnVcU9-b3g7Rdg4QJI",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1167,6 +1231,7 @@ arrayEpisodios = [
     "nome": "Aprisionada na Escuridão",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a2/Corpse_Soil.png/revision/latest/scale-to-width-down/350?cb=20150723161650",
+    "source":"1jY9Q0NAm-x7NFUv1HHB8spAIps0bx13I",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1193,6 +1258,7 @@ arrayEpisodios = [
     "nome": "Almas Ressuscitadas",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/84/Limelight.png/revision/latest/scale-to-width-down/350?cb=20091017225919",
+    "source":"1BBSPN4bpZFrZLsJsGaKO7uHj_Wllk7J0",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1224,6 +1290,7 @@ arrayEpisodios = [
     "nome": "A Batalha Mortal de Cada Um",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/04/Poison_Moth_Genjutsu_part_2.png/revision/latest/scale-to-width-down/350?cb=20160115105332",
+    "source":"1v-wRVuQ3PFy3aiHAedMk11Asj9aQrTYJ",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1252,6 +1319,7 @@ arrayEpisodios = [
     "nome": "Hora de Despertar",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/59/Colour_Course_Change.png/revision/latest/scale-to-width-down/350?cb=20170116051418",
+    "source":"17P2npMegvwCnObcr7g4CEDnTboOKITC9",
     "personagens":[
         "Naruto Uzumaki",
         "Sora",
@@ -1281,6 +1349,7 @@ arrayEpisodios = [
     "nome": "Desespero",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5b/Despair.PNG/revision/latest/scale-to-width-down/350?cb=20170116063426",
+    "source":"17JwyKaG23DzTq6fH7Q7XVQgLAiQIjNjX",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1302,6 +1371,7 @@ arrayEpisodios = [
     "nome": "Ressonância",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c4/Resonance.png/revision/latest/scale-to-width-down/350?cb=20170116070113",
+    "source":"1MnadUK8y1q8fIUa_8hKhusCNxxMDc6OI",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1322,6 +1392,7 @@ arrayEpisodios = [
     "nome": "Meu Amigo",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/05/My_Friend.PNG/revision/latest/scale-to-width-down/350?cb=20170116072236",
+    "source":"1-sbeRTPqTJrEXgVwuivkVWSCJZ_iVJy-",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1346,6 +1417,7 @@ arrayEpisodios = [
     "nome": "Uma Ameaça se Aproxima",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/dc/Akatsuki_vs_Matatabi.png/revision/latest/scale-to-width-down/350?cb=20160412200032",
+    "source":"1FNwdgI9Iv018YRT7OCkz9H1ooTzJZBdo",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1368,6 +1440,7 @@ arrayEpisodios = [
     "nome": "Invasão da Akatsuki",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c2/Fire_Temple.png/revision/latest/scale-to-width-down/350?cb=20150728084559",
+    "source":"1vKR3mTujtnz3zPs_KrnhuUPichj9_bu6",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1386,6 +1459,7 @@ arrayEpisodios = [
     "nome": "Sob o Céu Estrelado",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f5/Under_the_Starry_Sky.PNG/revision/latest/scale-to-width-down/350?cb=20170116224135",
+    "source":"1QUAOidD1XhGfjFpeLvHwR473ZiN83K0u",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1411,6 +1485,7 @@ arrayEpisodios = [
     "nome": "A Oração de Um Velho Sacerdote",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d5/The_Old_Monk%27s_Prayer.png/revision/latest/scale-to-width-down/350?cb=20190920121016",
+    "source":"1jxINRpY1F-aJfUPdSHJgMhqIURDS1Orp",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1440,6 +1515,7 @@ arrayEpisodios = [
     "nome": "O Próximo Passo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/cb/The_Next_Step.PNG/revision/latest/scale-to-width-down/350?cb=20170117023720",
+    "source":"1HGydgWFzpUKCQ8zmzx5yH9EeoLHy7fEn",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1466,6 +1542,7 @@ arrayEpisodios = [
     "nome": "Escalada de Prata",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/6b/Hidans_Immortality.PNG/revision/latest/scale-to-width-down/350?cb=20170117043315",
+    "source":"1r77bzzZdHkhQ6Xe4PwjhaLd7U0JGys56",
     "personagens":[
         "Asuma Sarutobi",
         "Shikamaru Nara",
@@ -1487,6 +1564,7 @@ arrayEpisodios = [
     "nome": "O Julgamento Dado",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/cc/Hidan_Ritual.png/revision/latest/scale-to-width-down/350?cb=20170117070221",
+    "source":"15Aew2H6fkSFOjkOVShpA31BUbeJfFyDR",
     "personagens":[
         "Asuma Sarutobi",
         "Shikamaru Nara",
@@ -1502,6 +1580,7 @@ arrayEpisodios = [
     "nome": "Grito Não Comprido",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/af/Unfufilled_scream.PNG/revision/latest/scale-to-width-down/350?cb=20190920170845",
+    "source":"1HToRcbb6yAuJ3f2SiVwhRgk_4zUUJDb2",
     "personagens":[
         "Asuma Sarutobi",
         "Shikamaru Nara",
@@ -1517,6 +1596,7 @@ arrayEpisodios = [
     "nome": "Últimas Palavras",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/48/Asuma_Dying.PNG/revision/latest/scale-to-width-down/350?cb=20170117190323",
+    "source":"1KPTBwVZK9fKOH7pWcjQj_ihOuDVRwfzj",
     "personagens":[
         "Asuma Sarutobi",
         "Shikamaru Nara",
@@ -1537,6 +1617,7 @@ arrayEpisodios = [
     "nome": "Notícia Devastante",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/65/Sad_News.png/revision/latest/scale-to-width-down/350?cb=20170117195218",
+    "source":"1HT5vPAYlg6Sg6zP29cJOV8sJmFXwFWBP",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1557,6 +1638,7 @@ arrayEpisodios = [
     "nome": "Time 10",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5f/Disambig_gray.svg/revision/latest/scale-to-width-down/34?cb=20070225221759",
+    "source":"1vMobmiVnVPpw2KYvhE_BiwuC1xAl8-1-",
     "personagens":[
         "Shikamaru Nara",
         "Ino Yamanaka",
@@ -1575,6 +1657,7 @@ arrayEpisodios = [
     "nome": "Alvo Travado",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/32/Target_Locked_On.png/revision/latest/scale-to-width-down/350?cb=20160828150710",
+    "source":"1VDwOHhJFcwYo4HgQMnOQxEXX5Z7FUJJE",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1599,6 +1682,7 @@ arrayEpisodios = [
     "nome": "A Habilidade de Kakuzu",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/80/Hidan_and_Kakuza_vs_Team_Asuma.png/revision/latest/scale-to-width-down/350?cb=20150131211803",
+    "source":"10QS02VSI9x46MBM_a4vnf_MPFCgfDn7O",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1618,6 +1702,7 @@ arrayEpisodios = [
     "nome": "O Terrível Segredo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b7/Kakuzu_strangeling_shinobi.png/revision/latest/scale-to-width-down/350?cb=20150224102340",
+    "source":"17lMUEVX-6SX5v1n3aUk-VFtdVASJX6N-",
     "personagens":[
         "Shikamaru Nara",
         "Ino Yamanaka",
@@ -1632,6 +1717,7 @@ arrayEpisodios = [
     "nome": "O Gênio Shikamaru",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/0d/Shikamaru%27s_Genius.png/revision/latest/scale-to-width-down/350?cb=20160828143457",
+    "source":"1OpLW68UCE2GD8kioMmZWvwNpRaa6T3mW",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -1648,6 +1734,7 @@ arrayEpisodios = [
     "nome": "Quando Amaldiçoar Alguém, Cave Duas Covas",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/2a/Hidan_vs_shikamaru.png/revision/latest/scale-to-width-down/350?cb=20150124100441",
+    "source":"1WHKHFKmr0U7U7EXT4j15ThoC5c298TYS",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1669,6 +1756,7 @@ arrayEpisodios = [
     "nome": "Futon: Rasen-Shuriken!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/52/F%C5%ABton_Rasenshuriken.png/revision/latest/scale-to-width-down/350?cb=20160407204031",
+    "source":"1-5WvE02LtmOV7XKaUeldjZl5nUwayupa",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1688,6 +1776,7 @@ arrayEpisodios = [
     "nome": "O Preço do Poder",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/aa/Severing_Chakra_Cells2.PNG/revision/latest/scale-to-width-down/350?cb=20150217191006",
+    "source":"1IP3uXe2Ru06nOK-LpS-DIJ-i-ApsfXQO",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1711,6 +1800,7 @@ arrayEpisodios = [
     "nome": "A Decisão de um Shinobi",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/ef/Yuukimaru.PNG/revision/latest/scale-to-width-down/350?cb=20160422165017",
+    "source":"1Apr37-somiinBcYmxEJ7NdL3_nJfTSp3",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1737,6 +1827,7 @@ arrayEpisodios = [
     "nome": "Descoberto, o Esconderijo de Orochimaru",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/4f/Orochimaru%27s_Hideout_Discovered.PNG/revision/latest/scale-to-width-down/350?cb=20160113155944",
+    "source":"1GTxZ4heDXD_eiox7Ouyuguxjb7mmXBQK",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -1758,6 +1849,7 @@ arrayEpisodios = [
     "nome": "Encontro",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/01/Encounter.png/revision/latest/scale-to-width-down/350?cb=20150722172524",
+    "source":"1lAcwfPF7Q7WXLceEb47q6LQ2BaQg4SKo",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -1784,6 +1876,7 @@ arrayEpisodios = [
     "nome": "Corações se Comunicando",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/47/K%C5%8Dmori_Seich%C5%AB.png/revision/latest/scale-to-width-down/350?cb=20160113160250",
+    "source":"1CmnigV6rxy6dt8TNXFo7UXmy_kJw0Faz",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -1808,6 +1901,7 @@ arrayEpisodios = [
     "nome": "Noite de Chuva",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/ce/Human_Cocoon_Technique.PNG/revision/latest/scale-to-width-down/350?cb=20151215224943",
+    "source":"1h8JZp_hrSK1T0V86LbCAMqkdVOSGuqXf",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -1833,6 +1927,7 @@ arrayEpisodios = [
     "nome": "Dois Amuletos",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/de/The_Two_Charms.PNG/revision/latest/scale-to-width-down/350?cb=20160113160704",
+    "source":"1KqrAIhJkgOTWsBp4DiAHlPJyPDlIZHwL",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1858,6 +1953,7 @@ arrayEpisodios = [
     "nome": "Inimigo Invisível",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f6/Body_Alteration.png/revision/latest/scale-to-width-down/350?cb=20151130211015",
+    "source":"1T5F6_j-An5zmdJI3aMRg0OaXRBlRPJjw",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1881,6 +1977,7 @@ arrayEpisodios = [
     "nome": "Labirinto de Reflexos",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/3a/Jade_Crystal_Labyrinth.png/revision/latest/scale-to-width-down/350?cb=20151006202119",
+    "source":"16skd1SvzYF_2YRz5AU27zIS2A7vLLszG",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1904,6 +2001,7 @@ arrayEpisodios = [
     "nome": "Aparece o Alvo",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/25/Jade_Crystal_Hexagonal_Pillars.png/revision/latest/scale-to-width-down/350?cb=20170816205420",
+    "source":"1zCTFttVY5uKH-nZF41cvTWZ52E2Idpxb",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1928,6 +2026,7 @@ arrayEpisodios = [
     "nome": "Biju Enlouquecido",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/66/Crystal_Wall_8th_Formation.png/revision/latest/scale-to-width-down/350?cb=20151016014743",
+    "source":"1IzTwemiXxEmlxrFeeV00eEGrQY5SH-x0",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1953,6 +2052,7 @@ arrayEpisodios = [
     "nome": "Dentro da Névoa",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/9d/Illusionary_Mist.PNG/revision/latest/scale-to-width-down/350?cb=20170823180826",
+    "source":"1HC6_jt6AuqQLgsNNO4h4iPy0LTBMVpIO",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -1984,6 +2084,7 @@ arrayEpisodios = [
     "nome": "Sentimentos de Cada Um",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/16/Hexagonal_Crystal_Shuriken_Dance.png/revision/latest/scale-to-width-down/350?cb=20160125070313",
+    "source":"1JNPj4zH3BF9VG5pEj6r1-8k6ePBNY9ez",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2010,6 +2111,7 @@ arrayEpisodios = [
     "nome": "Reorganização!",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/14/Regroup%21.PNG/revision/latest/scale-to-width-down/350?cb=20160113160945",
+    "source":"1wJP4TcEKA0yKkoBhAJNQP-FUetq_BefV",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2037,6 +2139,7 @@ arrayEpisodios = [
     "nome": "Kekkai Shiho Fujin",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e4/Team_three_sealing.png/revision/latest/scale-to-width-down/350?cb=20151130212648",
+    "source":"1txHN9gSPpeDugYdAcnF5JNBSE5In_6Ca",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2064,6 +2167,7 @@ arrayEpisodios = [
     "nome": "Elemento Cristal Destruído",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b1/Multiple_Mudshot_Technique.png/revision/latest/scale-to-width-down/350?cb=20151130220243",
+    "source":"10Pj-28ccXGCOupBtoohOKvQ7oP5fRCyw",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2092,6 +2196,7 @@ arrayEpisodios = [
     "nome": "Batalha Sobre a Barreira",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c4/The_Battle_Over_the_Barrier.PNG/revision/latest/scale-to-width-down/350?cb=20160113161552",
+    "source":"1KNSzQBsB6DmM-vyll5HrbTWa1Xc2KJoG",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2121,6 +2226,7 @@ arrayEpisodios = [
     "nome": "Camélia Vermelha",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f6/Arrow_of_Light.png/revision/latest/scale-to-width-down/350?cb=20151016012900",
+    "source":"1qVvYQ9Qze9nXXoruQ5ct0re7qUcDTV1i",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2142,6 +2248,7 @@ arrayEpisodios = [
     "nome": "Amigos Estranhos",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/26/Three-Tails_Mini_Clone_1.png/revision/latest/scale-to-width-down/350?cb=20151016033954",
+    "source":"1DyEutH1A_kzybqmB-DZrAzgSzE0mth0V",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2168,6 +2275,7 @@ arrayEpisodios = [
     "nome": "Diretrizes das Camélias",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/89/Naruto_lifts_Guren.png/revision/latest/scale-to-width-down/350?cb=20151030203214",
+    "source":"1Tx4riUCK8ztOAXeuDakf2weFZSG0Tfa2",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2194,6 +2302,7 @@ arrayEpisodios = [
     "nome": "Contra-ataque do Selo Amaldiçoado",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Segmented_Iron_Dome.png/revision/latest/scale-to-width-down/350?cb=20151130223406",
+    "source":"1tdv9KRU1NdNLG7hRsCOV5dnxwWRJf9hF",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2222,6 +2331,7 @@ arrayEpisodios = [
     "nome": "Memórias do Crime",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a9/Spindle_Formation.png/revision/latest/scale-to-width-down/350?cb=20160214004301",
+    "source":"1CdeLi3pXspILNotGdfT_pGgxhe15ypRn",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2250,6 +2360,7 @@ arrayEpisodios = [
     "nome": "Promessa Quebrada",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/75/Toad_Oil_Flame_Bullet.PNG/revision/latest/scale-to-width-down/350?cb=20151201024240",
+    "source":"1WbP0cDckA0xvJjkzs4IrU_sYXwfhELVK",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2280,6 +2391,7 @@ arrayEpisodios = [
     "nome": "O Lugar Para Retornar",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/2a/3_tails.PNG/revision/latest/scale-to-width-down/350?cb=20150125210936",
+    "source":"1QKZk1d57nNpnTmN3gXtUdZ8N2x-seIUr",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2308,6 +2420,7 @@ arrayEpisodios = [
     "nome": "O Discípulo da Serpente",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/ae/Sasuke%27s_Cursed_Seal_Level_2.png/revision/latest/scale-to-width-down/350?cb=20150124180638",
+    "source":"1QJiv6cvSSf3YrlQ4IUtYrb2aSw9oo535",
     "personagens":[
         "Sasuke Uchiha",
         "Orochimaru",
@@ -2326,6 +2439,7 @@ arrayEpisodios = [
     "nome": "O Olho do Falcão",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/64/Sasuke_Defeats_Orochimaru.PNG/revision/latest/scale-to-width-down/350?cb=20160113162214",
+    "source":"1Y1M0m5LNXgI4uQOJQ0wYrtDWlOLxRPPj",
     "personagens":[
         "Sasuke Uchiha",
         "Orochimaru",
@@ -2345,6 +2459,7 @@ arrayEpisodios = [
     "nome": "A Espada de Zabuza",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/ce/Zabuza%27s_Blade.png/revision/latest/scale-to-width-down/350?cb=20170309183756",
+    "source":"1f4c4qWE7YkWm1IEE1UMieANOQSvaSrhO",
     "personagens":[
         "Sasuke Uchiha",
         "Karin",
@@ -2361,6 +2476,7 @@ arrayEpisodios = [
     "nome": "A Guardiã da Muralha de Ferro",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/12/Karin%27s_%22Sense%22_Of_Chakra.PNG/revision/latest/scale-to-width-down/350?cb=20151129231932",
+    "source":"19egFsg2sl1ERzPVIG0SoEnjSYywDoDkG",
     "personagens":[
         "Sasuke Uchiha",
         "Jugo",
@@ -2374,6 +2490,7 @@ arrayEpisodios = [
     "nome": "Jugo do Esconderijo do Norte",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b9/Jugo_preparing_to_attack_Sasuke.png/revision/latest/scale-to-width-down/350?cb=20150728153551",
+    "source":"1uMhl46s5ElNmAw4tzywLDxTWe_9hZWEj",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2392,6 +2509,7 @@ arrayEpisodios = [
     "nome": "Formação!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/66/Formation.png/revision/latest/scale-to-width-down/350?cb=20160916033548",
+    "source":"1sC-MoU_ovgDgyOUzA6kRzDUtCT3tdghc",
     "personagens":[
         "Naruto Uzumaki",
         "Jiraiya",
@@ -2410,6 +2528,7 @@ arrayEpisodios = [
     "nome": "Crônicas do Kakashi ~A Vida de um Garoto no Campo de Batalha~ Início",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/23/Minato_Saving_Kakashi.PNG/revision/latest/scale-to-width-down/350?cb=20160121001744",
+    "source":"1kY2ATUX-jWFXootvMinV4P6GaRIuMpAs",
     "personagens":[
         "Kakashi Hatake",
         "Obito Uchiha",
@@ -2424,6 +2543,7 @@ arrayEpisodios = [
     "nome": "Crônicas do Kakashi ~A Vida de um Garoto no Campo de Batalha~ Fim",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/70/Obito_awakens_the_Sharingan.PNG/revision/latest/scale-to-width-down/350?cb=20131220220349",
+    "source":"1leBQUPvoYS_LahKlPB2RY45o2iSBX4m-",
     "personagens":[
         "Kakashi Hatake",
         "Obito Uchiha",
@@ -2437,6 +2557,7 @@ arrayEpisodios = [
     "nome": "Aqueles que se Movem",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/75/Eight_Man_Squad.png/revision/latest/scale-to-width-down/350?cb=20141009182539",
+    "source":"1-W3VgAAVTSwy5bVaJBVrpu6Jj1ac5m6g",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2463,6 +2584,7 @@ arrayEpisodios = [
     "nome": "Caçada",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5e/Explosive_Clay_Twin_Birds.png/revision/latest/scale-to-width-down/350?cb=20160323164837",
+    "source":"1ow6nIrFY74cC7gN2QYjqVpE9bXjYY20i",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2489,6 +2611,7 @@ arrayEpisodios = [
     "nome": "Confronto!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/8f/C2_Dragon.png/revision/latest/scale-to-width-down/350?cb=20150202191911",
+    "source":"1O0gk3Y-ebzEGsbkeF3ATwERTDLQ6qsNd",
     "personagens":[
         "Sasuke Uchiha",
         "Deidara",
@@ -2502,6 +2625,7 @@ arrayEpisodios = [
     "nome": "Arte",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/4c/C0.png/revision/latest/scale-to-width-down/350?cb=20150124101239",
+    "source":"1-4TWU-kA4J4w24Vv7FnToRjFtY6_iHGE",
     "personagens":[
         "Sasuke Uchiha",
         "Deidara",
@@ -2512,6 +2636,7 @@ arrayEpisodios = [
     "nome": "Desaparecimento",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/bc/Pain_And_Konan.PNG/revision/latest/scale-to-width-down/350?cb=20090905114423",
+    "source":"1l-IJxGmEVYhcLQqByUsCgSnsFLw_gXc9",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2538,6 +2663,7 @@ arrayEpisodios = [
     "nome": "Crepúsculo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b6/Itachi%27s_Genjutsu.PNG/revision/latest/scale-to-width-down/350?cb=20150218020042",
+    "source":"1ulrCGwOivdD6SxefF0ocqwoTn0CDRYqv",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2558,6 +2684,7 @@ arrayEpisodios = [
     "nome": "Contos do Ninja Determinado ~O Pergaminho de Jiraiya~ Início",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e3/The_Great_Toad_Sage.PNG/revision/latest/scale-to-width-down/350?cb=20170323052654",
+    "source":"1NYOdKM0Ad_6DINCovKAkBcz6MB4BlGem",
     "personagens":[
         "Jiraiya",
         "Tsunade",
@@ -2581,6 +2708,7 @@ arrayEpisodios = [
     "nome": "Contos do Ninja Determinado ~O Pergaminho de Jiraiya~ Fim",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b1/Kushina_And_Minato.PNG/revision/latest/scale-to-width-down/350?cb=20101125194843",
+    "source":"1_FjVa-8Re9ngo0xLw9ufOqH29eI6516x",
     "personagens":[
         "Jiraiya",
         "Tsunade",
@@ -2597,6 +2725,7 @@ arrayEpisodios = [
     "nome": "Infiltração! Vila Oculta da Chuva",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/8b/Jiraiya_infiltrates.png/revision/latest/scale-to-width-down/350?cb=20150209084519",
+    "source":"1sVGMN9kJfE6Njn2R1njCnlukVw7bQShj",
     "personagens":[
         "Jiraiya",
         "Tsunade",
@@ -2614,6 +2743,7 @@ arrayEpisodios = [
     "nome": "O Homem que Virou um Deus",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c2/The_Man_Who_Became_God.png/revision/latest/scale-to-width-down/350?cb=20160113163614",
+    "source":"10tUfI5ARadbpqaW8es6BOVMtubaixcee",
     "personagens":[
         "Jiraiya",
         "Konan",
@@ -2628,6 +2758,7 @@ arrayEpisodios = [
     "nome": "Ativar! Modo Sennin",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/50/Sage_mode.png/revision/latest/scale-to-width-down/350?cb=20150125202353",
+    "source":"1gcJD4yISPFw4OzUKNUCrTVyfrH_OWcoI",
     "personagens":[
         "Jiraiya",
         "Fukasaku",
@@ -2640,6 +2771,7 @@ arrayEpisodios = [
     "nome": "O Seis Caminhos de Pain, Apresentação",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/bc/Six_Paths_of_Pain.png/revision/latest/scale-to-width-down/350?cb=20150218020201",
+    "source":"1Z63qDRMCmQzIxbfC589frslm8NFoqdVy",
     "personagens":[
         "Jiraiya",
         "Fukasaku",
@@ -2652,6 +2784,7 @@ arrayEpisodios = [
     "nome": "O Conto do Destemido Jiraiya",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/8b/Jiraiya_infiltrates.png/revision/latest/scale-to-width-down/180?cb=20150209084519",
+    "source":"1PiSrv4nb_Ca6jGypb2aYWJOrVXN9-EbB",
     "personagens":[
         "Naruto Uzumaki",
         "Jiraiya",
@@ -2666,6 +2799,7 @@ arrayEpisodios = [
     "nome": "Convite Para a Festa",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/ac/Banquet_Invitation.png/revision/latest/scale-to-width-down/350?cb=20150816110846",
+    "source":"1WS2Dzfn6MK4lefKpeybAvVvWXZkxODVy",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2689,6 +2823,7 @@ arrayEpisodios = [
     "nome": "O Momento Demorado...",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a2/Uchiha_Hideout.png/revision/latest/scale-to-width-down/350?cb=20150728085222",
+    "source":"1b2aQLNuC-BO4G6dcgzWA6HyGJ3mVHNJW",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -2704,6 +2839,7 @@ arrayEpisodios = [
     "nome": "A Luz e as Trevas do Mangekyo Sharingan",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/bd/The_Light_%26_Dark_of_the_Mangekyo_Sharingan.png/revision/latest/scale-to-width-down/350?cb=20150729231502",
+    "source":"1V6vFkPv5Dwey-Uof_L7R-5VFweWXKv86",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -2720,6 +2856,7 @@ arrayEpisodios = [
     "nome": "Amaterasu",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/6b/Amaterasu.PNG/revision/latest/scale-to-width-down/350?cb=20091126180217",
+    "source":"1-d5VhTFQC1TMh2PHtx796XYqfYAEpSET",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -2733,6 +2870,7 @@ arrayEpisodios = [
     "nome": "O Fim",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/27/Sasuke_vs._Itachi_conclusion.png/revision/latest/scale-to-width-down/350?cb=20150212215333",
+    "source":"1L76qFAFgeRAuuntAWywOlNejcg7uHAdU",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -2747,6 +2885,7 @@ arrayEpisodios = [
     "nome": "O Mistério de Tobi",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e0/Tobi_taking_his_mask_off.png/revision/latest/scale-to-width-down/350?cb=20141009145239",
+    "source":"1ZyDNSzFDiaM--2rOtJ0Znkl4Xf-55oV4",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2769,6 +2908,7 @@ arrayEpisodios = [
     "nome": "Destino",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/64/Hashirama_vs_Madara.png/revision/latest/scale-to-width-down/350?cb=20150215010118",
+    "source":"1hDZt1fqFp5vT9C2fYBO5FqKew55ieEFb",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -2780,6 +2920,7 @@ arrayEpisodios = [
     "nome": "Verdade",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b4/Sasuke%27s_Awakened_Mangekyou_Sharingan.PNG/revision/latest/scale-to-width-down/350?cb=20091224152227",
+    "source":"13CFcdlF223XVCh4gJHO1lic2uMnV5Lt-",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -2793,6 +2934,7 @@ arrayEpisodios = [
     "nome": "Batalha no Vale da Nuvem",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/03/Unraiky%C5%8D_no_Tatakai.png/revision/latest/scale-to-width-down/350?cb=20150222031046",
+    "source":"1eva7Ph1P_p8rZGFDkqxiWDQA1WTNOqoK",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2815,6 +2957,7 @@ arrayEpisodios = [
     "nome": "-Hachibi- Contra -Sasuke-",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/0e/Sasuke_and_B_clashing.png/revision/latest/scale-to-width-down/350?cb=20130919143546",
+    "source":"157X070C-p0YfDuJxIhAyWqtnumjd6ohz",
     "personagens":[
         "Sasuke Uchiha",
         "Jugo",
@@ -2829,6 +2972,7 @@ arrayEpisodios = [
     "nome": "Andarilho",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/4c/Soap_Bubble_Ninjutsu.PNG/revision/latest/scale-to-width-down/350?cb=20150826050920",
+    "source":"1xV2wrKfg6S1Yl7ZnGY_hSvTkymRL96ur",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2855,6 +2999,7 @@ arrayEpisodios = [
     "nome": "Sucessor do Kinjutsu",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/db/DBarrierFormation.png/revision/latest/scale-to-width-down/350?cb=20150816015921",
+    "source":"1UdPMUM3T03CzMT4E-ef99iLin8g32sia",
     "personagens":[
         "Naruto Uzumaki",
         "Sai",
@@ -2874,6 +3019,7 @@ arrayEpisodios = [
     "nome": "Sentimentos do Sucessor",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/ad/Bubble_Drift.png/revision/latest/scale-to-width-down/350?cb=20150825144824",
+    "source":"1Zi4ahoAaAjeC2v8aBsQ1f4qjioGZa6y_",
     "personagens":[
         "Naruto Uzumaki",
         "Sai",
@@ -2894,6 +3040,7 @@ arrayEpisodios = [
     "nome": "Passado do Ninja Fugitivo",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/ff/KiriHunternin.png/revision/latest/scale-to-width-down/350?cb=20150816130547",
+    "source":"1MaYYn4MzLubT5qSSSSWPORGZSWFlhH02",
     "personagens":[
         "Naruto Uzumaki",
         "Sai",
@@ -2910,6 +3057,7 @@ arrayEpisodios = [
     "nome": "Herdeiro da Escuridão",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/87/Hotaru_as_a_child.png/revision/latest/scale-to-width-down/350?cb=20160115203219",
+    "source":"10HXtRDjfma1rtMpfvQVK2Hvohto4JAvo",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2930,6 +3078,7 @@ arrayEpisodios = [
     "nome": "Separação",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/27/Bubble_barrier_technique.PNG/revision/latest/scale-to-width-down/350?cb=20151129235406",
+    "source":"13W4W4lazfClWfxMAhCq4uoHUqKA_fCf3",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2950,6 +3099,7 @@ arrayEpisodios = [
     "nome": "O Jutsu Probido Liberado",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/0b/The_forbidden_jutsu_released.png/revision/latest/scale-to-width-down/350?cb=20170122203258",
+    "source":"1pFt7Ca5Dr1tVheEzgn28VgImnE9yEz7G",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2968,6 +3118,7 @@ arrayEpisodios = [
     "nome": "Mestre e Discípulo",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/1d/Utakata%27s_end.PNG/revision/latest/scale-to-width-down/350?cb=20170128170607",
+    "source":"17rGAvBkZXMoG-gPNEkDoG4k2c66i0iaW",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -2989,6 +3140,7 @@ arrayEpisodios = [
     "nome": "Notícias Sombrias",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/48/Naruto_shocked.PNG/revision/latest/scale-to-width-down/350?cb=20170402021704",
+    "source":"1jhk1kqzIiD3n2EiDL1-UF09UGeGKO4IS",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3017,6 +3169,7 @@ arrayEpisodios = [
     "nome": "Seguindo a Sombra do Mestre",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/da/Naruto_after_Jiraiya%27s_death.png/revision/latest/scale-to-width-down/350?cb=20141201100739",
+    "source":"1tcC2NOKFPQsCKKveztNTKHlSMOGMaMcv",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3038,6 +3191,7 @@ arrayEpisodios = [
     "nome": "Decodificação",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/55/Decryption.png/revision/latest/scale-to-width-down/350?cb=20140511120703",
+    "source":"1Obwh2l9Euje0qL8yKKcjj-qzdLwR5YGe",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3058,6 +3212,7 @@ arrayEpisodios = [
     "nome": "O Primeiro Desafio",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/2a/Daiichi_no_Kadai.png/revision/latest/scale-to-width-down/350?cb=20170403024047",
+    "source":"1xqm7pBcrL0ygjZ8I96OF0DUyW63haZ_4",
     "personagens":[
         "Naruto Uzumaki",
         "Fukasaku",
@@ -3074,6 +3229,7 @@ arrayEpisodios = [
     "nome": "Superando o Mestre",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/04/Shi_o_Koeru_Toki.png/revision/latest/scale-to-width-down/350?cb=20160920101513",
+    "source":"1JXBa0HPIpW0O6MeLOGcj1o-_5-eSZKgK",
     "personagens":[
         "Naruto Uzumaki",
         "Fukasaku",
@@ -3097,6 +3253,7 @@ arrayEpisodios = [
     "nome": "Ataque à Folha!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/44/Pain%27s_Invasion_Begins.png/revision/latest/scale-to-width-down/350?cb=20150207104131",
+    "source":"1zTmoUZyjX1kII_Rwl_HTp06H5pd__2cS",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3121,6 +3278,7 @@ arrayEpisodios = [
     "nome": "O Poder da Fé",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e0/Power_to_Believe.png/revision/latest/scale-to-width-down/350?cb=20170802201308",
+    "source":"1d4aisyQpYIccMmDZZoM7xqYCEMIIrkKL",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3147,6 +3305,7 @@ arrayEpisodios = [
     "nome": "Pain VS Kakashi",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/16/Kakashi_vs_Pain.png/revision/latest/scale-to-width-down/350?cb=20150202074400",
+    "source":"1T89jQ-psei7TKo_NVYZfOubpBj-6Yv2Q",
     "personagens":[
         "Kakashi Hatake",
         "Chouji Akimichi",
@@ -3165,6 +3324,7 @@ arrayEpisodios = [
     "nome": "O Mistério de Pain",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c4/Animal_Path_2.PNG/revision/latest/scale-to-width-down/350?cb=20150124172232",
+    "source":"1UMAW1fEWTX6RnIRSfgN0-PLicL0mYtna",
     "personagens":[
         "Naruto Uzumaki",
         "Fukasaku",
@@ -3187,6 +3347,7 @@ arrayEpisodios = [
     "nome": "Eu Sou Konohamaru, do Clã Sarutobi!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/1a/Konohamaru_Rasengan.png/revision/latest/scale-to-width-down/350?cb=20150131224056",
+    "source":"1TA4mlL_e4MC8NMSK4Eht-YBtKPqsncnW",
     "personagens":[
         "Naruto Uzumaki",
         "Fukasaku",
@@ -3200,6 +3361,7 @@ arrayEpisodios = [
     "nome": "O Mundo Conhece a Dor",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/27/Pain_at_Konoha.png/revision/latest/scale-to-width-down/350?cb=20141201212139",
+    "source":"10baiiV6F1eL1lWgvB8VwDoxh2dZFXKSC",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3229,6 +3391,7 @@ arrayEpisodios = [
     "nome": "Explosão! Modo Sennin",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c2/Naruto_destroying_Asura_path.png/revision/latest/scale-to-width-down/350?cb=20150127162227",
+    "source":"1U0hyQIV26lHURoD7wVTlkTFlMn35gvFf",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3256,6 +3419,7 @@ arrayEpisodios = [
     "nome": "Perigo! O Modo Sennin Desaparece",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f3/Shadow_Clone_Summoning_Scroll_2.png/revision/latest/scale-to-width-down/350?cb=20150924054445",
+    "source":"1pc5lKxdNUy23YAl66su7yY9bnUhpyO98",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3275,6 +3439,7 @@ arrayEpisodios = [
     "nome": "Captura da Kyubi, Completa",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/92/Ky%C5%ABbi_Hokaku_Kanry%C5%8D.png/revision/latest/scale-to-width-down/350?cb=20130813054702",
+    "source":"1fGUskFmyU7v2olgBDxYwJGMCFqqyBpbt",
     "personagens":[
         "Naruto Uzumaki",
         "Fukasaku",
@@ -3299,6 +3464,7 @@ arrayEpisodios = [
     "nome": "Confissão",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Chapter_437.jpg/revision/latest/scale-to-width-down/330?cb=20110217225231",
+    "source":"1id0INB6O-why83SQdhZ4_icUVlNDTJua",
     "personagens":[
         "Naruto Uzumaki",
         "Hinata Hyūga",
@@ -3321,6 +3487,7 @@ arrayEpisodios = [
     "nome": "Chibaku Tensei",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/96/Chibaku_Tensei_orb.png/revision/latest/scale-to-width-down/350?cb=20150309054038",
+    "source":"1c7QPs_PM-PAH-PH52HZYQ-oXm5l__1qp",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3344,6 +3511,7 @@ arrayEpisodios = [
     "nome": "Quarto Hokage",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Browse_icon.png/revision/latest?cb=20151125063353",
+    "source":"1yKj_muV1DQsTYejWIA5XSn2MDPu8rC7P",
     "personagens":[
         "Naruto Uzumaki",
         "Minato Namikaze",
@@ -3363,6 +3531,7 @@ arrayEpisodios = [
     "nome": "Os Dois Discípulos",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/db/The_Two_Students.png/revision/latest/scale-to-width-down/350?cb=20170316222239",
+    "source":"1EhepWAFdRTqgbrxM5FulvRmsTniBFwKN",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3387,6 +3556,7 @@ arrayEpisodios = [
     "nome": "Grande Aventura! A Busca pelo Legado do Quarto Hokage - Início",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5f/The_Fourth_Hokages_Legacy_Part_1.png/revision/latest/scale-to-width-down/350?cb=20100730090255",
+    "source":"1If9kiMGaX_7CXP7IliusG3u_1UcTgfSg",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3414,6 +3584,7 @@ arrayEpisodios = [
     "nome": "Grande Aventura! A Busca pelo Legado do Quarto Hokage - Fim",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/bb/The_Fourth_Hokages_Legacy_Part_2.png/revision/latest/scale-to-width-down/350?cb=20180729100729",
+    "source":"1cL2bAp7FwDephAoxJxm_x2SgNYaikM8q",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3432,6 +3603,7 @@ arrayEpisodios = [
     "nome": "Encontro",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5f/Disambig_gray.svg/revision/latest/scale-to-width-down/34?cb=20070225221759",
+    "source":"1Sg-7QEGD7j6UOYXoMgW_V3MTVN-G0nWU",
     "personagens":[
         "Naruto Uzumaki",
         "Nagato",
@@ -3449,6 +3621,7 @@ arrayEpisodios = [
     "nome": "O Nascimento de Pain",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/33/Origin_of_Pain.png/revision/latest/scale-to-width-down/350?cb=20160630135153",
+    "source":"1pldszhqPrx8wM9_C36_YU6sBkiArgWTs",
     "personagens":[
         "Naruto Uzumaki",
         "Jiraiya",
@@ -3472,6 +3645,7 @@ arrayEpisodios = [
     "nome": "O Conto de Uzumaki Naruto",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/17/Naruto_Being_Neglected.png/revision/latest/scale-to-width-down/350?cb=20160922140915",
+    "source":"1tozNO_x2xyDRBGeS3z3TLGTrYUtXWYlO",
     "personagens":[
         "Naruto Uzumaki",
         "Jiraiya",
@@ -3491,6 +3665,7 @@ arrayEpisodios = [
     "nome": "O Herói da Folha",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d3/Hero_of_the_Hidden_Leaf.PNG/revision/latest/scale-to-width-down/350?cb=20150222030908",
+    "source":"1RMHISSL1O9du4LHEhu6IbierrvwNL0zV",
     "personagens":[
         "Naruto Uzumaki",
         "Jiraiya",
@@ -3529,6 +3704,7 @@ arrayEpisodios = [
     "nome": "Iruka, o Instrutor Novato",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a0/Iruka%27s_1st_Day.png/revision/latest/scale-to-width-down/350?cb=20160924014005",
+    "source":"15sAJNguuUt27V5w5eQ0g8TTp-PHRAheY",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3556,6 +3732,7 @@ arrayEpisodios = [
     "nome": "O Teste de Iruka",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/64/Iruka%27s_Ordeal.png/revision/latest/scale-to-width-down/350?cb=20150725175741",
+    "source":"1bIWUaT-SiJljekYL57EybWAQUadWLCPR",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3580,6 +3757,7 @@ arrayEpisodios = [
     "nome": "A Decisão de Iruka",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/0c/Iruka%27s_decision.png/revision/latest/scale-to-width-down/350?cb=20160924013844",
+    "source":"1M08o4gMV4Rq4Ofh_stsI3W5k-_9wkIDF",
     "personagens":[
         "Naruto Uzumaki",
         "Iruka Umino",
@@ -3605,6 +3783,7 @@ arrayEpisodios = [
     "nome": "Hatake Kakashi, o Jonin Responsável",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/50/Council.png/revision/latest/scale-to-width-down/350?cb=20160130035213",
+    "source":"1toW1Gp72xiL5gfZWm9_ayWvHVgxD-GJN",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3628,6 +3807,7 @@ arrayEpisodios = [
     "nome": "Inari, a Coragem Posta à Prova",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c6/Inari%27s_Courage_Put_to_the_Test.png/revision/latest/scale-to-width-down/350?cb=20150725180057",
+    "source":"1DgcRGEeDobxzg8Xcj8lRBZWuq8Ra7Jzi",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3652,6 +3832,7 @@ arrayEpisodios = [
     "nome": "Naruto, as Lições de Revanche",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/98/Naruto%27s_School_of_Revenge.png/revision/latest/scale-to-width-down/350?cb=20150729231752",
+    "source":"15bRtAQhk7SH1snCBFdVoqf2IZcV3YVAY",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3670,6 +3851,7 @@ arrayEpisodios = [
     "nome": "Os Laços de Gaara",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/76/Gaara%27s_bond.png/revision/latest/scale-to-width-down/350?cb=20160203005004",
+    "source":"1mnmnMCLH0yz7wrFs8R8JO8W1IdN3422_",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3688,6 +3870,7 @@ arrayEpisodios = [
     "nome": "Naruto Incontrolável",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/2e/Naruto_Outbreak.png/revision/latest/scale-to-width-down/350?cb=20160916012358",
+    "source":"1Smsl78wBGoNY0LZOM4RkbP3cuisklic7",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3707,6 +3890,7 @@ arrayEpisodios = [
     "nome": "Partaida! O Time Tenten",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/82/Deploy%21Team_Tenten.png/revision/latest/scale-to-width-down/350?cb=20160428000317",
+    "source":"1B4azpXFTlWcX-oiM506GTcbofu2pDhOM",
     "personagens":[
         "Naruto Uzumaki",
         "Tenten",
@@ -3723,6 +3907,7 @@ arrayEpisodios = [
     "nome": "Distrito Animal",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/30/Condor_Using_his_Clones.png/revision/latest/scale-to-width-down/350?cb=20150816161548",
+    "source":"1Q6jullhn3jg6MdWsrz28naiIo1z_2CdJ",
     "personagens":[
         "Naruto Uzumaki",
         "Rock Lee",
@@ -3738,6 +3923,7 @@ arrayEpisodios = [
     "nome": "Ah, a Pílula da Juventude",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/ae/Naruto_green_suit.png/revision/latest/scale-to-width-down/350?cb=20170326194543",
+    "source":"1oD_ql6dVPCxSSrtfhJs5hyWvyeU3y4go",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3752,6 +3938,7 @@ arrayEpisodios = [
     "nome": "Mestre e Aluno Corajosos, o Treinamento",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/ab/Dokonj%C5%8D_Shitei_Shugy%C5%8Dhen.png/revision/latest/scale-to-width-down/350?cb=20130901040343",
+    "source":"1PsuNPj8lNehinQdCU1JKZyUILQ5pYyId",
     "personagens":[
         "Naruto Uzumaki",
         "Jiraiya",
@@ -3766,6 +3953,7 @@ arrayEpisodios = [
     "nome": "Mestre e Aluno Corajosos, as Memórias",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b2/Odama_Rasengan_Debut.png/revision/latest/scale-to-width-down/350?cb=20160129044649",
+    "source":"1763vYdVCQzkKR97IIS9K8XZ88L_sriqv",
     "personagens":[
         "Naruto Uzumaki",
         "Jiraiya",
@@ -3781,6 +3969,7 @@ arrayEpisodios = [
     "nome": "A Enciclopédia de Patas do Sasuke",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/44/Uchiha_Brothers_as_kids.png/revision/latest/scale-to-width-down/350?cb=20110921124636",
+    "source":"1noRdi_cFQocoHa910mxCc_qYBBLoEJkD",
     "personagens":[
         "Sakura Haruno",
         "Sasuke Uchiha",
@@ -3796,6 +3985,7 @@ arrayEpisodios = [
     "nome": "Naruto e o Velho Soldado",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/7b/Naruto_and_the_Old_Soldier.png/revision/latest/scale-to-width-down/350?cb=20160130040415",
+    "source":"1W3-c1cpravOJBBqRqvtv8FQb6ZEMfcQ4",
     "personagens":[
         "Naruto Uzumaki",
         "Kosuke Maruboshi",
@@ -3813,6 +4003,7 @@ arrayEpisodios = [
     "nome": "A Melodia de Amor de Kakashi",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/47/Kakashi_Kiss.png/revision/latest/scale-to-width-down/350?cb=20150722113448",
+    "source":"1bYAGVn6EsEBnZ0OJ1oZp1oP8U5qRLh7m",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3831,6 +4022,7 @@ arrayEpisodios = [
     "nome": "Crônicas de Neji",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/ec/Neji_Chronicles.png/revision/latest/scale-to-width-down/350?cb=20150816114317",
+    "source":"1KOe3z1_wQLNyvfePt42vcyNF-T17Kkmh",
     "personagens":[
         "Neji Hyuga",
         "Tenten",
@@ -3847,6 +4039,7 @@ arrayEpisodios = [
     "nome": "O Homem que Já Morreu Duas Vezes",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/93/The_Man_Who_Died_Twice.png/revision/latest/scale-to-width-down/350?cb=20160427232555",
+    "source":"1JpGpY0_tHixRGKCZ2SYemsC5qsfsTzWL",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3864,6 +4057,7 @@ arrayEpisodios = [
     "nome": "A Pior Corrida de Três Pernas",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a3/Saiaku_no_Nininsankyaku.png/revision/latest/scale-to-width-down/350?cb=20120503201538",
+    "source":"1T1pCgurC1GkcWrsxq5qUluHBht-zBeuN",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3878,6 +4072,7 @@ arrayEpisodios = [
     "nome": "Cooperação, o Time 10",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f9/Team_10%27s_Teamwork.png/revision/latest/scale-to-width-down/350?cb=20150723210519",
+    "source":"1azwLS6XNd4YJWDs-Mc6vO_kR7p2C17X7",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3898,6 +4093,7 @@ arrayEpisodios = [
     "nome": "Apressado Rumo às Trevas",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/cf/Drive_toward_the_darkness.png/revision/latest/scale-to-width-down/350?cb=20110127162338",
+    "source":"1cIziBNWboOHiqmpZEWE9jqXC9q4cKDKX",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3916,6 +4112,7 @@ arrayEpisodios = [
     "nome": "O Sexto Hokage Danzo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/8a/The_Sixth_Hokage_Danzo.png/revision/latest/scale-to-width-down/350?cb=20150729222900",
+    "source":"1UYb4OXUJv7Accx0qfX-OZwlyZI0yBULN",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3938,6 +4135,7 @@ arrayEpisodios = [
     "nome": "Véspera da Reunião dos 5 Kages",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/6a/Chapter_453.jpg/revision/latest/scale-to-width-down/314?cb=20100718024012",
+    "source":"11D6tThb_V9stVMynfxkDx-c82EerI4ch",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -3963,6 +4161,7 @@ arrayEpisodios = [
     "nome": "Os 5 Kages Aparecem!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/73/Raikage_%26_guards.png/revision/latest/scale-to-width-down/350?cb=20150907081557",
+    "source":"1i5m0oyNCmrZP4DBTvx2Zad-nxDNNBNpx",
     "personagens":[
         "Naruto Uzumaki",
         "Sai",
@@ -3999,6 +4198,7 @@ arrayEpisodios = [
     "nome": "O Pedido de Naruto",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/9f/Naruto%27s_Plea.png/revision/latest/scale-to-width-down/350?cb=20150729225316",
+    "source":"1B6Tnp6wXCM6ajazoIxkypeGd282WMUWS",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4029,6 +4229,7 @@ arrayEpisodios = [
     "nome": "A Dolorosa Decisão",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/09/Painful_Decision.png/revision/latest/scale-to-width-down/350?cb=20141009163851",
+    "source":"16pXnrqrNDwfEd1JMoaY3ztSiZ1fh-adj",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4063,6 +4264,7 @@ arrayEpisodios = [
     "nome": "Correndo Com o Trovão",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/83/Racing_Lightning.png/revision/latest/scale-to-width-down/350?cb=20150729230204",
+    "source":"1065Q3-suVRH7DL8hzL-tKECTz_iico0g",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -4095,6 +4297,7 @@ arrayEpisodios = [
     "nome": "O Jeito Ninja do Sasuke",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/77/Sasuke%27s_Ninja_Way.png/revision/latest/scale-to-width-down/350?cb=20150729224620",
+    "source":"1TpHapq9HSH5J059AVQZbev4cBeN3AaD2",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -4122,6 +4325,7 @@ arrayEpisodios = [
     "nome": "O Poder dos Cinco Kages",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c9/Kage_Meet_Tobi.png/revision/latest/scale-to-width-down/350?cb=20160308055656",
+    "source":"13ib7C3PwsigCxwAzYLIKEioJ_5xG44d1",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -4153,6 +4357,7 @@ arrayEpisodios = [
     "nome": "Declaração de Guerra",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/ce/Chapter_467_cover.png/revision/latest/scale-to-width-down/350?cb=20181019051156",
+    "source":"1rmwmkScDeI73gPp2IuZEiw_CcDbAvxuc",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4184,6 +4389,7 @@ arrayEpisodios = [
     "nome": "Os Sentimentos da Sakura",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/7d/Sakura%27s_Feelings.png/revision/latest/scale-to-width-down/350?cb=20150729223958",
+    "source":"1iAXbGt_hiEKnRxsaBAm96jg0_cogAgc6",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4207,6 +4413,7 @@ arrayEpisodios = [
     "nome": "Biju VS Biju sem Cauda",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/42/Samehada_changes_loyalty.png/revision/latest/scale-to-width-down/350?cb=20150224094036",
+    "source":"1hVdp9YXwedjp8_bjvZsiepP0vm_TJmfr",
     "personagens":[
         "Killer B",
         "Kin-chan",
@@ -4226,6 +4433,7 @@ arrayEpisodios = [
     "nome": "Como um Amigo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/85/As_one%27s_friend.png/revision/latest/scale-to-width-down/350?cb=20150209080724",
+    "source":"1q340yeLwqWuKfgr1XZxA2xA6PTJ5jtsY",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4248,6 +4456,7 @@ arrayEpisodios = [
     "nome": "O Braço Direito de Danzo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d3/Danzo%27s_Right_Arm.png/revision/latest/scale-to-width-down/350?cb=20150209111415",
+    "source":"1FopeONscNdBPxCycgd0feWqAGpJgDP56",
     "personagens":[
         "Naruto Uzumaki",
         "Sai",
@@ -4268,6 +4477,7 @@ arrayEpisodios = [
     "nome": "O Dojutsu Proibido",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/cd/Izanagi_Episode.png/revision/latest/scale-to-width-down/350?cb=20110505171727",
+    "source":"1mnlZ9ve6I93Fc9gqtfN1Q6HWG2ruMfZV",
     "personagens":[
         "Sasuke Uchiha",
         "Karin",
@@ -4281,6 +4491,7 @@ arrayEpisodios = [
     "nome": "Shimura Danzo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Browse_icon.png/revision/latest?cb=20151125063353",
+    "source":"1hO_UA3FXBA2uRcuKg4u1bufeOMaw3ila",
     "personagens":[
         "Sasuke Uchiha",
         "Karin",
@@ -4301,6 +4512,7 @@ arrayEpisodios = [
     "nome": "A Determinação de Sakura",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/de/Sakura%27s_Resolve.png/revision/latest/scale-to-width-down/350?cb=20110519134629",
+    "source":"1AzgT3CvyRnDORzGZJiRYiFCd1qSH0C--",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4320,6 +4532,7 @@ arrayEpisodios = [
     "nome": "Laços Desfeitos",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/96/Naruto_x_Sasuke_flashback.png/revision/latest/scale-to-width-down/350?cb=20170413075127",
+    "source":"1w-2fPofL8auw7ygTMWYmtkYCHArublt_",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -4337,6 +4550,7 @@ arrayEpisodios = [
     "nome": "O Fardo que Carrego",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f6/Kakashi_intercepts_Sasuke.png/revision/latest/scale-to-width-down/350?cb=20150203065808",
+    "source":"1sAGdcuwoJG0-HGikJLIluFdlSWJOW-a4",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4351,6 +4565,7 @@ arrayEpisodios = [
     "nome": "Dois Desitinos",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/74/NarutoxSasuke_Reverse_Role.png/revision/latest/scale-to-width-down/350?cb=20110610155421",
+    "source":"12Vo7l19NivUvy_GVN5wc87UaFPiFqPTA",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4366,6 +4581,7 @@ arrayEpisodios = [
     "nome": "Ninjas de Alto Nível",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b7/High_Level_Shinobi.png/revision/latest/scale-to-width-down/350?cb=20170324222849",
+    "source":"1PuMdBEVfj3nEJ3-g7g1SbQ0d8DWhpIMf",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4386,6 +4602,7 @@ arrayEpisodios = [
     "nome": "O Infiltrado",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/cd/Infiltrator.png/revision/latest/scale-to-width-down/350?cb=20160224022758",
+    "source":"1F2Da57YBb0gKCFjcKLleRs5YYT-7YZ5n",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4416,6 +4633,7 @@ arrayEpisodios = [
     "nome": "As Grandes Nações se Movem",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/1e/Tv.png/revision/latest/scale-to-width-down/350?cb=20151128080732",
+    "source":"1HFYZBedwcWxLLsvWKVMCoKPI6HJvnYO6",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4447,6 +4665,7 @@ arrayEpisodios = [
     "nome": "O Hokage Hatake Kakashi",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/4c/Episode_219.png/revision/latest/scale-to-width-down/350?cb=20170325022612",
+    "source":"1JRZDSldhTo0Bo3hFCXvyDjYg7tp8BxtN",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4475,6 +4694,7 @@ arrayEpisodios = [
     "nome": "A Profecia de Ogama Sennin",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a2/The_Great_Toad%27s_Prediction.png/revision/latest/scale-to-width-down/350?cb=20150506011736",
+    "source":"1yLKhJUzN3WDLQ7Yjgy0IIgWRm0qC1vkP",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4501,6 +4721,7 @@ arrayEpisodios = [
     "nome": "Armazenamento",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e3/Gerotora_Storing_Himself.png/revision/latest/scale-to-width-down/350?cb=20160603132721",
+    "source":"1F1REAEal6zdTM6vmVm-pHGd0MLuatqTO",
     "personagens":[
         "Naruto Uzumaki",
         "Fukasaku",
@@ -4517,6 +4738,7 @@ arrayEpisodios = [
     "nome": "A Decisão dos Cinco Kages",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/82/Five_Kage_Decide.png/revision/latest/scale-to-width-down/350?cb=20150504191423",
+    "source":"1OLY7F4CgJhGfHSwKmr8HMuqE29Q8AQ3e",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4548,6 +4770,7 @@ arrayEpisodios = [
     "nome": "O Jovem e o Oceano",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/68/Yusuke.png/revision/latest/scale-to-width-down/350?cb=20110804135652",
+    "source":"1eFd3z6NGdLvZkqhS6qJcN97EGpoJ6_uY",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4564,6 +4787,7 @@ arrayEpisodios = [
     "nome": "Os Mercadores Ninjas de Benisu",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/99/Ninjaofbenisu.png/revision/latest/scale-to-width-down/350?cb=20110811143123",
+    "source":"1TPLkKkCc-_XRviRC9TrpFTAXSk5GdgQA",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4581,6 +4805,7 @@ arrayEpisodios = [
     "nome": "O Navio Fantasma Amaldiçoado",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/6c/The_Cursed_Ghost_Ship.png/revision/latest/scale-to-width-down/350?cb=20110818154833",
+    "source":"1kr9PDvBAmhcyXr3oCo6dkI6F59t_Xl8Z",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4595,6 +4820,7 @@ arrayEpisodios = [
     "nome": "Ilha do Navio de Guerra",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/4a/Battleship_island.png/revision/latest/scale-to-width-down/350?cb=20110825130345",
+    "source":"1IabpOYF4FcCTkAPAJRrXG9QzNcdvf9T3",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4608,6 +4834,7 @@ arrayEpisodios = [
     "nome": "Ilha do Esquecimento",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/9f/The_island_of_the_summons.png/revision/latest/scale-to-width-down/350?cb=20110901185538",
+    "source":"1OEIIIBwH1vVzRES985CfwSEGgbjy_7wE",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4621,6 +4848,7 @@ arrayEpisodios = [
     "nome": "Lute, Rock Lee!",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/82/Fight%21_Rock_Lee%21.png/revision/latest/scale-to-width-down/350?cb=20150731133237",
+    "source":"1fSFX7iRNm193r6BKRl0f1nJTvd5hKqAU",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -4634,6 +4862,7 @@ arrayEpisodios = [
     "nome": "Coma ou Morra!? Os Cogumelos do Inferno",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Naruto_infected.png/revision/latest/scale-to-width-down/350?cb=20110922134832",
+    "source":"1S21YRjAmXRawGPdP8NNErda53Q8mOKE3",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4648,6 +4877,7 @@ arrayEpisodios = [
     "nome": "O Contra-ataque das Sombras",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/1a/Revenge_of_shadow_clones.png/revision/latest/scale-to-width-down/350?cb=20110929133435",
+    "source":"1yd6-CYb5pTVxOHryher2Xsr8P0w9oF3i",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4660,6 +4890,7 @@ arrayEpisodios = [
     "nome": "A Rota Fechada",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/82/Closed_Sea_Route.png/revision/latest/scale-to-width-down/350?cb=20111006150030",
+    "source":"1oMAOH44T90n7ykKNIOlG58ud6vybAVGo",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4677,6 +4908,7 @@ arrayEpisodios = [
     "nome": "As Meninas se Reúnem",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c2/Girls%27_Get-Together.png/revision/latest/scale-to-width-down/350?cb=20111013141531",
+    "source":"1bKfAayUe0745wpMsxsWVHVEgMhO1fet5",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4703,6 +4935,7 @@ arrayEpisodios = [
     "nome": "Apresentando o Impostor? Naruto",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/55/Imposter_Naruto.png/revision/latest/scale-to-width-down/350?cb=20111020201146",
+    "source":"1X3iqKc0Xo3f6atnPYrBDWlD8RqFisfwk",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4717,6 +4950,7 @@ arrayEpisodios = [
     "nome": "O Discípulo Favorito de Naruto",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/cd/Naruto%27s_fav._student.png/revision/latest/scale-to-width-down/350?cb=20111027132544",
+    "source":"15suPQ_va66lNJH4ux42SL4fLJuinrv9H",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4735,6 +4969,7 @@ arrayEpisodios = [
     "nome": "A Kunoichi de Nadeshiko",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/3e/Shizuka.png/revision/latest/scale-to-width-down/350?cb=20160505235730",
+    "source":"1OSfZGilZrK4OtfMjWdVDhKJfl4KiVGTD",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4754,6 +4989,7 @@ arrayEpisodios = [
     "nome": "Companheiros de Verdade",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c9/Nakama.png/revision/latest/scale-to-width-down/350?cb=20160111214012",
+    "source":"1Eh8CxdwDLA1u-C9Z__5TvTHEp2-GcMt4",
     "personagens":[
         "Naruto Uzumaki",
         "Shino Aburame",
@@ -4768,6 +5004,7 @@ arrayEpisodios = [
     "nome": "Ah, Minha Heroína Tsunade-sama",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/98/Ah%2C_My_Hero_Lady_Tsunade.png/revision/latest/scale-to-width-down/350?cb=20111206194200",
+    "source":"1aicQ6gQIv4rav4zgGGZUvc2NUug5URYZ",
     "personagens":[
         "Tenten",
         "Rock Lee",
@@ -4782,6 +5019,7 @@ arrayEpisodios = [
     "nome": "O Descanso de Sai",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b3/Sai%27s_portrait_of_Team_7.png/revision/latest/scale-to-width-down/350?cb=20170324174633",
+    "source":"1KCpi1oRtLiDw7N3lpjN1i-ETNCtDSZlo",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -4794,6 +5032,7 @@ arrayEpisodios = [
     "nome": "A Lenda de Ino-Shika-Cho",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/77/The_Legendary_Ino-Shika-Ch%C5%8D.png/revision/latest/scale-to-width-down/350?cb=20160120055652",
+    "source":"15DwMJM4B--0EcXsjH-Xe1M_20otdkSa7",
     "personagens":[
         "Shikamaru Nara",
         "Chouji Akimichi",
@@ -4814,6 +5053,7 @@ arrayEpisodios = [
     "nome": "A Determinação de Kiba",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/40/Kiba%27s_Determination.png/revision/latest/scale-to-width-down/350?cb=20120422181556",
+    "source":"1DoAlycfLlrNFTQZf3bU-WAj03UpAFd1w",
     "personagens":[
         "Kakashi Hatake",
         "Pakkun",
@@ -4832,6 +5072,7 @@ arrayEpisodios = [
     "nome": "Kakashi, Meu Eterno Rival",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/80/Rivalry_Contest.png/revision/latest/scale-to-width-down/350?cb=20111222133517",
+    "source":"1P_KL6pEjKaDWm1Kp0RN7CS_Pc2NCMwPt",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4848,6 +5089,7 @@ arrayEpisodios = [
     "nome": "O Juramento de Naruto",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d0/Naruto%27s_vow.png/revision/latest/scale-to-width-down/350?cb=20120108033201",
+    "source":"1GfrpkUpJ_4_rIewtRsB0NE-5jxGQlpsP",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4867,6 +5109,7 @@ arrayEpisodios = [
     "nome": "Terra a Vista! A Ilha Paradisíaca?",
     "filler": False,
     "thumbnail":"https://img1.ak.crunchyroll.com/i/spire1-tmb/4acc9ffcce2dcd4d95d16a41b5cd5f0f1325029424_fwide.jpg",
+    "source":"1B7EWTrvGL7BTsqYxCfJlgEeZL4-YAmaw",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4884,6 +5127,7 @@ arrayEpisodios = [
     "nome": "Killer Bee e Motoi",
     "filler": False,
     "thumbnail":"https://3.bp.blogspot.com/-TYjYbWUmu_4/WRsdiqeK9vI/AAAAAAAAGEk/u8D6wXN2C0kbd7bPc3JG4eDKrfVKr1U6ACLcB/s1600/244.jpg",
+    "source":"1Wl_v-Elygiwxk8TWX6v-L-LhlLakrUbL",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4900,6 +5144,7 @@ arrayEpisodios = [
     "nome": "Próximo Desafio! Naruto VS Kyubi!!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/3d/Sage_Art-Ultra-Big_Ball_Rasengan.png/revision/latest/scale-to-width-down/350?cb=20151201020509",
+    "source":"1oYcrbjUKfgzbxRIMVqwMZPj-2ugO47cI",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4912,6 +5157,7 @@ arrayEpisodios = [
     "nome": "O Brilho Laranja",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/24/Naruto%27s_family.png/revision/latest/scale-to-width-down/350?cb=20141009173729",
+    "source":"1SwH-Zg2LUwU4zvTcnbqs-gMUgDEXtB5n",
     "personagens":[
         "Naruto Uzumaki",
         "Kushina Uzumaki",
@@ -4925,6 +5171,7 @@ arrayEpisodios = [
     "nome": "Kyubi É o Alvo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Senp%C5%8D_Ch%C5%8D%C5%8Ddama_Rasen_Tarengan.png/revision/latest/scale-to-width-down/350?cb=20150821111741",
+    "source":"1Nq3ybtIIzGzSiTV9cnEFwQThkqc2lMHC",
     "personagens":[
         "Naruto Uzumaki",
         "Kushina Uzumaki",
@@ -4943,6 +5190,7 @@ arrayEpisodios = [
     "nome": "A Batalha Mortal do Quarto!!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/8f/Tobi_Chains.png/revision/latest/scale-to-width-down/350?cb=20160915175508",
+    "source":"18U0JutvqRubwp1e28xeRt00skyN9ONUK",
     "personagens":[
         "Quarto Hokage: Minato Namikaze",
         "Kushina Uzumaki",
@@ -4963,6 +5211,7 @@ arrayEpisodios = [
     "nome": "Obrigada",
     "filler": False,
     "thumbnail":"https://i2.wp.com/angryanimebitches.com/wp-content/uploads/2012/02/Pic091.jpg",
+    "source":"1Lj4ZFA162w-1rHgeSrRtw8HOL-fFr8PC",
     "personagens":[
         "Naruto Uzumaki",
         "Kushina Uzumaki",
@@ -4983,6 +5232,7 @@ arrayEpisodios = [
     "nome": "Besta Estranha VS Monstro! Batalha no Paraíso!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/39/Leaf_Rock-Destroying_Rise.png/revision/latest/scale-to-width-down/350?cb=20120218215604",
+    "source":"1JVLR4bEXtFm5UNNBqbEGr9kn1S1ZzpN7",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -4999,6 +5249,7 @@ arrayEpisodios = [
     "nome": "O Homem Conhecido como Kisame",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/ef/Kisame_breaks_free.png/revision/latest/scale-to-width-down/350?cb=20151004044058",
+    "source":"1sAaz1tx_fKikzrlYHFD4I5YVd2zA4wlW",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -5020,6 +5271,7 @@ arrayEpisodios = [
     "nome": "O Anjo que Trás a Morte",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/45/The_Angelic_Herald_of_Death.png/revision/latest/scale-to-width-down/350?cb=20120301211012",
+    "source":"1Wyd6BdWczoR5DIs1_Jdz8ENoTm6UR43n",
     "personagens":[
         "Konan",
         "Yahiko",
@@ -5042,6 +5294,7 @@ arrayEpisodios = [
     "nome": "A Ponte para a Paz",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/ba/Konan_supports_the_bridge_to_peace.png/revision/latest/scale-to-width-down/350?cb=20150616163327",
+    "source":"1_Dx6GMKTfNcahqsMb5Crr-NVkS0DFJ5b",
     "personagens":[
         "Konan",
         "Yahiko",
@@ -5062,6 +5315,7 @@ arrayEpisodios = [
     "nome": "Missão Rank-S Super Secreta",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/7a/S-rank_mission.png/revision/latest/scale-to-width-down/350?cb=20120315215614",
+    "source":"1-o7EoJvwjOTAYzkn5Pri7dLyJ7QVi6NX",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -5092,6 +5346,7 @@ arrayEpisodios = [
     "nome": "O Retorno do Artista",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/80/The_Artist_Returns.png/revision/latest/scale-to-width-down/350?cb=20120322162022",
+    "source":"1PiT9ORkRs_rvMIDdKi1L6T2awf0AKyrf",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -5115,6 +5370,7 @@ arrayEpisodios = [
     "nome": "União! As Forças da Aliança Shinobi!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/86/Allied_Shinobi_Forces_Battalion.png/revision/latest/scale-to-width-down/350?cb=20160305220712",
+    "source":"13awuPSKbpapIIAHSgOpoEy0lpCK1Ft_3",
     "personagens":[
         "Naruto Uzumaki",
         "Yamato",
@@ -5157,6 +5413,7 @@ arrayEpisodios = [
     "nome": "Encontro",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5f/Disambig_gray.svg/revision/latest/scale-to-width-down/34?cb=20070225221759",
+    "source":"1DRljPhwg-5SvZIFjsznNvrS2n57AXtPX",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -5173,6 +5430,7 @@ arrayEpisodios = [
     "nome": "Rivais",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/69/Epis%C3%B3dio_258.png/revision/latest?cb=20120413130231&path-prefix=pt-br",
+    "source":"1VyJU8pVmYQlj_65JPQppSVQlT68uAeIa",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -5192,6 +5450,7 @@ arrayEpisodios = [
     "nome": "Rachadura",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/36/Rift.png/revision/latest/scale-to-width-down/350?cb=20120419120320",
+    "source":"1jyO8WEDpJ_OwnCYxPkQv2gKJZ8lE3dAU",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -5211,6 +5470,7 @@ arrayEpisodios = [
     "nome": "Separação",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e6/Naruto_Sasuke_clash.png/revision/latest/scale-to-width-down/350?cb=20150222045618",
+    "source":"1HhPVf38gXL7QjR3ZPTFPEUPAwcxUW-En",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -5232,6 +5492,7 @@ arrayEpisodios = [
     "nome": "Para Meu Amigo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/77/For_my_friend.png/revision/latest/scale-to-width-down/350?cb=20160223173845",
+    "source":"19g5ta8fZJACEXUG4qDrWw24qtMJ1ezQv",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -5282,6 +5543,7 @@ arrayEpisodios = [
     "nome": "Começa a Guerra!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/01/War_Begins%21.png/revision/latest/scale-to-width-down/350?cb=20120510180114",
+    "source":"1DHcXOZtUidmPUQ3Eprsb4ZBoIa87Kplf",
     "personagens":[
         "Kankuru",
         "Omoi",
@@ -5304,6 +5566,7 @@ arrayEpisodios = [
     "nome": "Sai e Shin",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e7/Sai_and_Shin.png/revision/latest/scale-to-width-down/350?cb=20151001003155",
+    "source":"1qU-IN1_9WSe4BZeXOVJy-kq7aCB4AQdF",
     "personagens":[
         "Kankuru",
         "Omoi",
@@ -5327,6 +5590,7 @@ arrayEpisodios = [
     "nome": "O Segredo do Edo Tensei",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/0f/Chapter_520_Cover.png/revision/latest/scale-to-width-down/350?cb=20181018034232",
+    "source":"1_1Uv9fH69uVT2dr0Way9TqFiTKWxYUc7",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -5354,6 +5618,7 @@ arrayEpisodios = [
     "nome": "Reencontro com Um Velho Inimigo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d1/Episode_265_Shippuden_1.png/revision/latest/scale-to-width-down/350?cb=20150829025722",
+    "source":"1EGY4RiLOlYBB10CM0adIv9RtWZrnZw2h",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -5379,6 +5644,7 @@ arrayEpisodios = [
     "nome": "Primeiro Adversário, Último Adversário",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d9/Kakashi_pierces_Zabuza.png/revision/latest/scale-to-width-down/350?cb=20150221095330",
+    "source":"1dyIqa7dyUzjWJhMR77i7cjgxZ9nLRsGf",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -5406,6 +5672,7 @@ arrayEpisodios = [
     "nome": "O Gênio Estrategista da Folha",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/41/The_Brilliant_Military_Advisor_of_Konoha.png/revision/latest/scale-to-width-down/350?cb=20120621134030",
+    "source":"1jbSuFq1PEl4sWe40SvZ1VHZ1HrelviDm",
     "personagens":[
         "Quinto Kazekage: Gaara",
         "Tsunade",
@@ -5432,6 +5699,7 @@ arrayEpisodios = [
     "nome": "A Batalha Feroz de Cada Um!!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f6/Sorezore_no_Gekisen%21%21.png/revision/latest/scale-to-width-down/350?cb=20160127044159",
+    "source":"17lNDzMj1C7aNsTBjUVCk-_HcYMaLJY0q",
     "personagens":[
         "Quinto Kazekage: Gaara",
         "Kankuru",
@@ -5469,6 +5737,7 @@ arrayEpisodios = [
     "nome": "Palavra Tabu",
     "filler": False,
     "thumbnail":"https://i.ytimg.com/vi/DzhA2ypqvrc/maxresdefault.jpg",
+    "source":"1BjfTR_r66Clz2KpSGEEExEI-os7yEzC7",
     "personagens":[
         "Darui",
         "Samui",
@@ -5485,6 +5754,7 @@ arrayEpisodios = [
     "nome": "Laços de Ouro",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/00/Epis%C3%B3dio_270.png/revision/latest?cb=20120722211140&path-prefix=pt-br",
+    "source":"1gM2gvZl0T1tXUqF3PKla8Rc21MxpuWen",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -5511,6 +5781,7 @@ arrayEpisodios = [
     "nome": "O Caminho para Sakura",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b0/Road_to_Sakura2.png/revision/latest/scale-to-width-down/350?cb=20120726151745",
+    "source":"1aGUzRPZbOfD9KxHbY-lOLUzaWDnsj_Pk",
     "personagens":[
         "Sakura Haruno",
         "Ino Yamanaka",
@@ -5537,6 +5808,7 @@ arrayEpisodios = [
     "nome": "Mifune VS Hanzo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d9/Mifune_vs_Hanz%C5%8D.png/revision/latest/scale-to-width-down/350?cb=20120802113210",
+    "source":"1KRIEhLMPlQbmmjE7ildv1IXgZIdfSgU8",
     "personagens":[
         "Mifune",
         "Shikaku Nara",
@@ -5557,6 +5829,7 @@ arrayEpisodios = [
     "nome": "A Verdadeira Gentileza",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/35/True_Kindness_Flashback.png/revision/latest/scale-to-width-down/350?cb=20120809140124",
+    "source":"17r-I5GwYSKju-1tQXbHmj3iDCBeeqWtk",
     "personagens":[
         "Shikamaru Nara",
         "Chouji Akimichi",
@@ -5577,6 +5850,7 @@ arrayEpisodios = [
     "nome": "A Formação Ino-Shika-Cho Completa!!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/ba/Ino_Shika_Cho_vs._Asuma.png/revision/latest/scale-to-width-down/350?cb=20120810105354",
+    "source":"1qpe606Aq6yISNP48kq8Xd8_FTZ41YP_G",
     "personagens":[
         "Shikamaru Nara",
         "Chouji Akimichi",
@@ -5592,6 +5866,7 @@ arrayEpisodios = [
     "nome": "Uma Carta de Dentro do Coração",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/0e/A_Message_from_the_Heart.png/revision/latest/scale-to-width-down/350?cb=20160127043508",
+    "source":"19xY62kwZh13zXJ3QTGGsbKN2774t_3yV",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -5609,6 +5884,7 @@ arrayEpisodios = [
     "nome": "O Ataque da Estátua Gedo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/df/Gedo_Statue_appear.png/revision/latest/scale-to-width-down/350?cb=20120823193355",
+    "source":"1Ms-3UKpIFCbZ1eKgafW0KidmMqF1UVye",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -5648,6 +5924,7 @@ arrayEpisodios = [
     "nome": "Selo de União",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/64/Wakai_no_In.png/revision/latest/scale-to-width-down/350?cb=20120830135757",
+    "source":"1oum-ni8-vx8wBbuEunurje8w6TFyHC3V",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -5667,6 +5944,7 @@ arrayEpisodios = [
     "nome": "O Ninja Médico É o Alvo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/3d/Medic_Ninja_in_Danger.png/revision/latest/scale-to-width-down/350?cb=20120906121536",
+    "source":"1_20bDAFg3QCWlZ5rrbno7sWhUXGD-TSJ",
     "personagens":[
         "Sakura Haruno",
         "Neji Hyuga",
@@ -5689,6 +5967,7 @@ arrayEpisodios = [
     "nome": "A Armadilha do Zetsu Branco",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/8f/Insect_Tornado.png/revision/latest/scale-to-width-down/350?cb=20151006185107",
+    "source":"1gxInEGGctTlxOvs9_I2DnPWylwTNH4cH",
     "personagens":[
         "Shino Aburame",
         "Kiba Inuzuka",
@@ -5702,6 +5981,7 @@ arrayEpisodios = [
     "nome": "A Estética do Artista",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/1f/Aesthetics_of_an_artist.png/revision/latest/scale-to-width-down/350?cb=20120924140016",
+    "source":"1IDjOElysLk9biCAObVNcuFhX_ar6BKUM",
     "personagens":[
         "Deidara",
         "Kabuto Yakushi",
@@ -5720,6 +6000,7 @@ arrayEpisodios = [
     "nome": "A Força Aliada das Mães!!",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/90/Mom%27s_fighting.png/revision/latest/scale-to-width-down/350?cb=20120927140611",
+    "source":"1tD7JRyVBdhF8-Wwq9HkIcVb9aN8PBwJc",
     "personagens":[
         "Ebisu",
         "Hiruzen Sarutobi",
@@ -5735,6 +6016,7 @@ arrayEpisodios = [
     "nome": "História Secreta: A Dupla Mais Forte!!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/43/A_and_B_brothers.png/revision/latest/scale-to-width-down/350?cb=20121004121604",
+    "source":"16QZC_T7KKSjiFjFYZ9XHlP5KBo6sPimc",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -5753,6 +6035,7 @@ arrayEpisodios = [
     "nome": "Dois Sóis!!",
     "filler": False,
     "thumbnail":"https://2.bp.blogspot.com/-jka5nXpRcP4/WR2qNSpktYI/AAAAAAAAGJs/GN5n8OzqNCISLYcPBxlBhWdBNkRR3mLPgCLcB/s1600/283.jpg",
+    "source":"12Fvml2zL6rNgpmKpPeV0EpMD2f54CpLK",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -5770,6 +6053,7 @@ arrayEpisodios = [
     "nome": "Kabutowari! Akebino Jinin",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/66/The_Helmet_Splitter_Jinin_Akebino%21.png/revision/latest/scale-to-width-down/350?cb=20160205045018",
+    "source":"1i-DNexRWduBBNHqOHRilapMRvzRdhxzy",
     "personagens":[
         "Kakashi Hatake",
         "Might Guy",
@@ -5784,6 +6068,7 @@ arrayEpisodios = [
     "nome": "Usuária do Estilo Calor! Pakura da Areia Oculta",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/63/Wikipedia-logo.png/revision/latest/scale-to-width-down/35?cb=20070429123042",
+    "source":"1XvKcE4sMl2JB4_17w673-Nd7-etr6xx5",
     "personagens":[
         "Maki",
         "Omoi",
@@ -5800,6 +6085,7 @@ arrayEpisodios = [
     "nome": "Aquilo que Não se Pode Recuperar",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/55/Things_You_Can%27t_Get_Back.png/revision/latest/scale-to-width-down/350?cb=20121101190821",
+    "source":"1u4iXFSa7-C-Zm0ZgzL1TIzzmeDZ6qLyc",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -5818,6 +6104,7 @@ arrayEpisodios = [
     "nome": "Alguém em Que se Pode Apostar",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/1e/Bet.png/revision/latest/scale-to-width-down/350?cb=20121101200315",
+    "source":"1hzu1MvZiYXot-5t16dk4FwB1O1a08zmI",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -5837,6 +6124,7 @@ arrayEpisodios = [
     "nome": "Perigo, o Combo Jinpachi e Kushimaru!!",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/bb/Danger.png/revision/latest/scale-to-width-down/350?cb=20160214202100",
+    "source":"10dTedfxrEkUPSyF3XqK22MWWBVQ7Hb_x",
     "personagens":[
         "Kakashi Hatake",
         "Might Guy",
@@ -5853,6 +6141,7 @@ arrayEpisodios = [
     "nome": "Espada Relâmpago!! Ameyuri Ringo",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a1/Ameyuri_Ringo.png/revision/latest/scale-to-width-down/350?cb=20160214201145",
+    "source":"1PcrSxAWsenCZaAuUBreXZOTEFnj3aMD-",
     "personagens":[
         "Kakashi Hatake",
         "Might Guy",
@@ -5871,6 +6160,7 @@ arrayEpisodios = [
     "nome": "Poder - Episódio 1",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/7f/Power_-_Episode_1.png/revision/latest/scale-to-width-down/350?cb=20121123211311",
+    "source":"1L6WzmO1LaEqKZ_GW1Hcv374LA59SqcTw",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -5894,6 +6184,7 @@ arrayEpisodios = [
     "nome": "Poder - Episódio 2",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/98/Chikara-ep2.png/revision/latest/scale-to-width-down/350?cb=20121129141452",
+    "source":"1T3a775u-IHFukGV_O--6o06OzB3S9x5F",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -5917,6 +6208,7 @@ arrayEpisodios = [
     "nome": "Poder - Episódio 3",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/36/Chikara-ep.3.png/revision/latest/scale-to-width-down/350?cb=20121209124247",
+    "source":"1VYKPB-A8_dgCe7GaRFFY7ZbkcmtyD4ug",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -5939,6 +6231,7 @@ arrayEpisodios = [
     "nome": "Poder - Episódio 4",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d7/Chikara-ep.4.png/revision/latest/scale-to-width-down/350?cb=20121213221301",
+    "source":"1cYLheOjH_Tt7cHGzgUbYqKWiN8ZZnAmj",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -5971,6 +6264,7 @@ arrayEpisodios = [
     "nome": "Poder - Episódio 5",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/3c/Seven-tailed_Naruto_clone.png/revision/latest/scale-to-width-down/350?cb=20121220135421",
+    "source":"1VDD1qQG5blbUg9VUzylas3jpsiC9VKr2",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -6001,6 +6295,7 @@ arrayEpisodios = [
     "nome": "Poder - Episódio Final",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/44/Power_-_Final_Episode.png/revision/latest/scale-to-width-down/350?cb=20130110143008",
+    "source":"1uJeLReblValQWGxRHrhKE1xaQnWkGkgC",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -6025,6 +6320,7 @@ arrayEpisodios = [
     "nome": "Naruto Entra na Guerra!!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/59/Rasenrangan_Anime_2.png/revision/latest/scale-to-width-down/350?cb=20161007212002",
+    "source":"11hZSfYZlh2JBvm2K9uXl1M0HmdxG7Xew",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -6052,6 +6348,7 @@ arrayEpisodios = [
     "nome": "Os Sentimentos do Pai, o Amor da Mãe",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/ff/Karura%27s_will_inside_Gaara.png/revision/latest/scale-to-width-down/350?cb=20130124131739",
+    "source":"1XABQJHKJ7_e88pvZddBYjG8eoLyRqmwk",
     "personagens":[
         "Naruto Uzumaki",
         "Quinto Kazekage: Gaara",
@@ -6068,6 +6365,7 @@ arrayEpisodios = [
     "nome": "Finalmente se Conhecem!! Naruto VS Itachi",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b2/Itachi%27s_Taijutsu.png/revision/latest/scale-to-width-down/350?cb=20150124180810",
+    "source":"1IHrEfZe22oCYOJLMJSDK2JITiy1zkbAl",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -6081,6 +6379,7 @@ arrayEpisodios = [
     "nome": "Aquele que É Reconhecido",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/af/Nagato_is_sealed.png/revision/latest/scale-to-width-down/350?cb=20150221104348",
+    "source":"1XYddTYU35iRnjeDKjEzSk7V4jSFSW1tP",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -6094,6 +6393,7 @@ arrayEpisodios = [
     "nome": "Mizukage, Marisco Gigante e Miragens",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/62/Ohamaguri_mist.png/revision/latest/scale-to-width-down/350?cb=20160120230332",
+    "source":"1pteCxt-mSSa7i2o4JgkdqebpqPIOCWko",
     "personagens":[
         "Naruto Uzumaki",
         "Quinto Kazekage: Gaara",
@@ -6109,6 +6409,7 @@ arrayEpisodios = [
     "nome": "Paradoxo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e1/Mujun.png/revision/latest/scale-to-width-down/350?cb=20150220083855",
+    "source":"1aBYaS9lZfX1ggOTGUn-k-mG54EX0ZM7C",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -6127,6 +6428,7 @@ arrayEpisodios = [
     "nome": "Terror: Garoto Brincalhão",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/28/J%C5%8Dki_B%C5%8Di3.png/revision/latest/scale-to-width-down/350?cb=20150313070421",
+    "source":"1Y4r-7UIEcyQH4_VzeZeNf2OTpFZTqH1k",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -6151,6 +6453,7 @@ arrayEpisodios = [
     "nome": "Fantasma do Passado",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5e/Kako_no_B%C5%8Drei.png/revision/latest/scale-to-width-down/350?cb=20160624172421",
+    "source":"18luUdcRCc8UGp7Vopa2FRnDmwApfKr6L",
     "personagens":[
         "Naruto Uzumaki",
         "Shikamaru Nara",
@@ -6173,6 +6476,7 @@ arrayEpisodios = [
     "nome": "Yomi Tenshin no Jutsu",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/53/Four_Beasts_Formation.png/revision/latest/scale-to-width-down/350?cb=20150224113444",
+    "source":"1WXR_AGrByqbHdYD5RRPNyffAuQmE3R5r",
     "personagens":[
         "Naruto Uzumaki",
         "Shikamaru Nara",
@@ -6196,6 +6500,7 @@ arrayEpisodios = [
     "nome": "Os Vingadores",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/aa/Vengeful.png/revision/latest/scale-to-width-down/350?cb=20130321195106",
+    "source":"1y7Im9EmEodAlQAMI2ii2HwnTFY8FM-af",
     "personagens":[
         "Naruto Uzumaki",
         "Shikamaru Nara",
@@ -6221,6 +6526,7 @@ arrayEpisodios = [
     "nome": "O Olho do Coração",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/89/Kokoro_no_Me.png/revision/latest/scale-to-width-down/350?cb=20130328162102",
+    "source":"15rXagpCnjQaSmm5TkFUqtgZf5F39-n__",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -6235,6 +6541,7 @@ arrayEpisodios = [
     "nome": "Desaparecendo no Luar",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b0/Gekk%C5%8D_ni_Kiyu.png/revision/latest/scale-to-width-down/350?cb=20130404142328",
+    "source":"1hh00Sixtuc7CV1hB6CIxlwuqagzM17wM",
     "personagens":[
         "Sakura Haruno",
         "Hayate Gekku",
@@ -6260,6 +6567,7 @@ arrayEpisodios = [
     "nome": "Noite de Lua Crescente",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f9/Mikazuki_no_Yoru.png/revision/latest/scale-to-width-down/350?cb=20130411130417",
+    "source":"1k6wvD1yYMsHHzSIOcdzEtFfd6bpFY-MJ",
     "personagens":[
         "Sakura Haruno",
         "Hayate Gekku",
@@ -6277,6 +6585,7 @@ arrayEpisodios = [
     "nome": "Missão Rank-A: Competição de Culinária",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e3/Food_contest.png/revision/latest/scale-to-width-down/350?cb=20161028230802",
+    "source":"1jplzdAqfz_7Vajd5nu5L7FhVL_1d-Gyg",
     "personagens":[
         "Naruto Uzumaki",
         "Shikamaru Nara",
@@ -6302,6 +6611,7 @@ arrayEpisodios = [
     "nome": "A Queda do Castelo",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/7c/Fallen_castle.png/revision/latest/scale-to-width-down/350?cb=20130425183622",
+    "source":"1mcqPqdADk8Hk-kwH6ys-lTBI8iNJWrL0",
     "personagens":[
         "Naruto Uzumaki",
         "Shikamaru Nara",
@@ -6324,6 +6634,7 @@ arrayEpisodios = [
     "nome": "Prólogo para O Caminho Ninja",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/95/Road_to_ninja_episode.png/revision/latest/scale-to-width-down/350?cb=20130509204125",
+    "source":"1VXLluyYI2p8ykA8sXCu4XnfqPJJ0kwSj",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -6349,6 +6660,7 @@ arrayEpisodios = [
     "nome": "O Velho e o Olho de Dragão",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/8d/Leaf_Dragon_God.png/revision/latest/scale-to-width-down/350?cb=20151203014536",
+    "source":"1tvz3D7ZRYipOb5rBuYPmOSH-DpgNagvh",
     "personagens":[
         "Naruto Uzumaki",
         "Sai",
@@ -6365,6 +6677,7 @@ arrayEpisodios = [
     "nome": "Chuva Seguida de Neve, com Possibilidade de Raios",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a9/Rain_Followed_by_Snow%2C_with_Some_Lightning.png/revision/latest/scale-to-width-down/350?cb=20130516133628",
+    "source":"1f_KvMThd9z2DM5c2Cs7ErBCUqvUbYRm2",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -6385,6 +6698,7 @@ arrayEpisodios = [
     "nome": "Chuva Dolorosa",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f0/Yota_and_Friends.png/revision/latest/scale-to-width-down/350?cb=20130524074524",
+    "source":"1J4rFU65h9adQG0jThLOFJz0pnjI636s8",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -6401,6 +6715,7 @@ arrayEpisodios = [
     "nome": "Neve Persistente",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/28/Nagoriyuki.png/revision/latest/scale-to-width-down/350?cb=20130530133759",
+    "source":"1IELFZKFpHk9EGPZgnJI0nfbFHJmNv3am",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -6418,6 +6733,7 @@ arrayEpisodios = [
     "nome": "Forças Aliadas do Edo Tensei!!",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/7b/The_Reanimated_Allied_Forces.png/revision/latest/scale-to-width-down/350?cb=20130606194754",
+    "source":"1YxbMPYAKxLtmc2BSFhA2652PiMgY-eOL",
     "personagens":[
         "Kabuto Yakushi",
         "Orochimaru",
@@ -6440,6 +6756,7 @@ arrayEpisodios = [
     "nome": "Shino VS Torune!!",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/fe/Shino_vs._Torune.png/revision/latest/scale-to-width-down/350?cb=20150825043759",
+    "source":"15Z_VoCbHowb37fDay6Uw5NGYmgCrVgno",
     "personagens":[
         "Naruto Uzumaki",
         "Shino Aburame",
@@ -6458,6 +6775,7 @@ arrayEpisodios = [
     "nome": "Buraco no Coração - O Outro Jinchuriki",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/00/Blue_B_vs_Killer_B.png/revision/latest/scale-to-width-down/350?cb=20150221065751",
+    "source":"1o5j9VHSCAqh2AWwfZPnabng-uU8f1UNO",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -6474,6 +6792,7 @@ arrayEpisodios = [
     "nome": "A Alma que Habita o Interior de uma Marionete",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/ad/Kugutsu_ni_Yadoru_Tamashii.png/revision/latest/scale-to-width-down/350?cb=20130627131701",
+    "source":"13HxWu2MwqinUgoFXS6lKClagsBhcC4tD",
     "personagens":[
         "Kankuru",
         "Chiyo",
@@ -6489,6 +6808,7 @@ arrayEpisodios = [
     "nome": "Corra, Omoi",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/41/Raiton_Renkei_Sand%C4%81bomu.png/revision/latest/scale-to-width-down/350?cb=20130704135751",
+    "source":"1rUtH7Ae3rXOnpnWM94-4SfAxoKwn6cYf",
     "personagens":[
         "Naruto Uzumaki",
         "Sai",
@@ -6512,6 +6832,7 @@ arrayEpisodios = [
     "nome": "Chegam os Reforços",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/69/Reinforcements_Arrive.png/revision/latest/scale-to-width-down/350?cb=20140326115229",
+    "source":"1BKDfUS5G4SJ2j97mPMyHc5ss6y4_b548",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -6556,6 +6877,7 @@ arrayEpisodios = [
     "nome": "Uchiha Madara",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Browse_icon.png/revision/latest?cb=20151125063353",
+    "source":"1DGRlvcpbynAx6FtoJwgkA9VQMgtYL73p",
     "personagens":[
         "Naruto Uzumaki",
         "Tsunade",
@@ -6578,6 +6900,7 @@ arrayEpisodios = [
     "nome": "Reunindo os Cinco Kages...!!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c3/Gokage_Sh%C5%ABketsu.png/revision/latest/scale-to-width-down/350?cb=20130801135541",
+    "source":"1Rzmx-fJhskwYSO9LoOS759krBMkz_Aan",
     "personagens":[
         "Naruto Uzumaki",
         "Tsunade",
@@ -6606,6 +6929,7 @@ arrayEpisodios = [
     "nome": "Máscara Inquebrável - Bolha Despedaçada",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a1/Utakata_meets_Naruto.png/revision/latest/scale-to-width-down/350?cb=20140326222519",
+    "source":"15Dalo5aMoz08_OcjAsGY-Ie8Rmvkehi0",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -6624,6 +6948,7 @@ arrayEpisodios = [
     "nome": "Jinchuriki VS Jinchuriki!!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/26/Jinch%C5%ABriki_VS_Jinch%C5%ABriki%21%21.png/revision/latest/scale-to-width-down/350?cb=20130815132123",
+    "source":"1mKyB8LEFMCCOJuzTo7CGTH2wJ_fImybM",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -6653,6 +6978,7 @@ arrayEpisodios = [
     "nome": "Yonbi: O Eremita Rei dos Macacos",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/21/Son_trapped.png/revision/latest/scale-to-width-down/350?cb=20130822121112",
+    "source":"1ujYPTdWgbfM3rsboNBpAdqgjGqC0ni-u",
     "personagens":[
         "Naruto Uzumaki",
         "Kurama",
@@ -6674,6 +7000,7 @@ arrayEpisodios = [
     "nome": "Kyubi",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Browse_icon.png/revision/latest?cb=20151125063353",
+    "source":"19DPV25hZN8NNFsAye4JRZaTI8-FUeDmt",
     "personagens":[
         "Naruto Uzumaki",
         "Kurama",
@@ -6693,6 +7020,7 @@ arrayEpisodios = [
     "nome": "Kurama",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Browse_icon.png/revision/latest?cb=20151125063353",
+    "source":"1-X_qvlOpHbBQxeJ_rGzT2zWJibSa4agD",
     "personagens":[
         "Naruto Uzumaki",
         "Kurama",
@@ -6718,6 +7046,7 @@ arrayEpisodios = [
     "nome": "Dupla",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e3/Naruto%27s_TBM.png/revision/latest/scale-to-width-down/350?cb=20130905162344",
+    "source":"1WxQQUn5YEbT65VtP3mjJQnQyYxKxqEra",
     "personagens":[
         "Naruto Uzumaki",
         "Kurama",
@@ -6734,6 +7063,7 @@ arrayEpisodios = [
     "nome": "Promessa de Vitória",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c4/Sh%C5%8Dri_e_no_Yogen.png/revision/latest/scale-to-width-down/350?cb=20130912171228",
+    "source":"1qDozsqlvZxEGH7nADUlliWvwcE_bqP3j",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -6764,6 +7094,7 @@ arrayEpisodios = [
     "nome": "Olhos que Vêem a Escuridão",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/35/Yami_o_Miru_Me.png/revision/latest/scale-to-width-down/350?cb=20130919132658",
+    "source":"1L2QayBaZ3ARRetMeZt1DZBmThRDGhCpe",
     "personagens":[
         "Sasuke Uchiha",
         "Jugo",
@@ -6779,6 +7110,7 @@ arrayEpisodios = [
     "nome": "Determinação de Pedra",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/89/Ishi_no_Ishi.png/revision/latest/scale-to-width-down/350?cb=20130926135312",
+    "source":"1dxEbvVp8R-E3O-5APilzn9feJrvGUmpu",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -6798,6 +7130,7 @@ arrayEpisodios = [
     "nome": "Riscos do Edo Tensei",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e6/Edo_Tensei_no_Risuku1.png/revision/latest/scale-to-width-down/350?cb=20131011032852",
+    "source":"1oBm2V3_U-g5v-NSk4XQfop4rXcoRVl5O",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -6817,6 +7150,7 @@ arrayEpisodios = [
     "nome": "Dupla de Irmãos!!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/69/Ky%C5%8Ddai%2C_Taggu%21%21.png/revision/latest/scale-to-width-down/350?cb=20131010131953",
+    "source":"1NOrd5RVInq67UuXqplk1oTOM5dzr5qtB",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -6838,6 +7172,7 @@ arrayEpisodios = [
     "nome": "A Folha de Cada Um",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/19/Izanami_activated.png/revision/latest/scale-to-width-down/350?cb=20131024131637",
+    "source":"1bGX4wsxNKLmo8fJQ38w5G7wDK2REZnsb",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -6855,6 +7190,7 @@ arrayEpisodios = [
     "nome": "Yakushi Kabuto",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Browse_icon.png/revision/latest?cb=20151125063353",
+    "source":"1iIzHOWG6y15dhwTnJTDG9wtqfW2HhiMD",
     "personagens":[
         "Kabuto Yakushi",
         "Kabuto Yakushi (criança)",
@@ -6872,6 +7208,7 @@ arrayEpisodios = [
     "nome": "Ativação: Izanami",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/3f/Hatsud%C5%8D_-_Izanami.png/revision/latest/scale-to-width-down/350?cb=20131108211908",
+    "source":"1HWcsmWSL1BS7Wqe9sJ4zyS1IQ1w_cfRA",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -6884,6 +7221,7 @@ arrayEpisodios = [
     "nome": "Izanagi e Izanami",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f1/Izanagi_and_Izanami.png/revision/latest/scale-to-width-down/350?cb=20131114133552",
+    "source":"1kY0rdPHx_a0MGw3bZ7xsNl7rm6jH6LPb",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -6900,6 +7238,7 @@ arrayEpisodios = [
     "nome": "Eu Sempre Vou Te Amar",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/4e/Itachi%27s_farewell.png/revision/latest/scale-to-width-down/350?cb=20131121123944",
+    "source":"1ztCy0U5G3-lQvp809yJF3XKpwpArK4Ja",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -6922,6 +7261,7 @@ arrayEpisodios = [
     "nome": "Edo Tensei: Liberado",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/61/Edo_Tensei_Release.png/revision/latest/scale-to-width-down/350?cb=20131128182143",
+    "source":"1dD3W_05LfMPoqwEns5xkYg3UzHm_oPDz",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -6953,6 +7293,7 @@ arrayEpisodios = [
     "nome": "Ressurreição!! Orochimaru",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/7c/Kaija_H%C5%8Din.png/revision/latest/scale-to-width-down/350?cb=20131205121643",
+    "source":"1G_SJMgzMkcu2qlOAVtS8l5zXjB9F-nSS",
     "personagens":[
         "Naruto Uzumaki",
         "Kurama",
@@ -6971,6 +7312,7 @@ arrayEpisodios = [
     "nome": "O Segredo do Ninjutsu de Espaço-Tempo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/7d/Chapter_597.png/revision/latest/scale-to-width-down/350?cb=20181018053753",
+    "source":"1KTh3yY1xjIj1kEVFxQznZFVXG3og0HGj",
     "personagens":[
         "Naruto Uzumaki",
         "Kurama",
@@ -6985,6 +7327,7 @@ arrayEpisodios = [
     "nome": "Quem Diabos É Você!?",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/1e/Episode_343_Infobox.png/revision/latest/scale-to-width-down/350?cb=20140317041042",
+    "source":"1ae28u8fBld1L7t-Rb_IAvwkCZbJPj5xu",
     "personagens":[
         "Naruto Uzumaki",
         "Killer B",
@@ -7003,6 +7346,7 @@ arrayEpisodios = [
     "nome": "Obito e Madara",
     "filler": False,
     "thumbnail":"https://img1.ak.crunchyroll.com/i/spire4-tmb/d2d2c183a43252c62990e6dbf59f1e871389046604_main.jpg",
+    "source":"1IhylPct8W9wNJDrmvA5eWtUwyKqw0Ykp",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -7024,6 +7368,7 @@ arrayEpisodios = [
     "nome": "Eu Estou no Inferno",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/24/I%27m_in_Hell.png/revision/latest/scale-to-width-down/350?cb=20140116130913",
+    "source":"1AvrjB3tOV2rxtpv08IhvuRHUW0qIX-EV",
     "personagens":[
         "Kakashi Hatake",
         "Obito Uchiha",
@@ -7036,6 +7381,7 @@ arrayEpisodios = [
     "nome": "Mundo dos Sonhos",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/9e/World_of_Dreams.png/revision/latest/scale-to-width-down/350?cb=20140123132735",
+    "source":"1p5Xqtu_VL0jrL5TJ7kkKD2S4arcJWDde",
     "personagens":[
         "Obito Uchiha",
         "Madara Uchiha",
@@ -7051,6 +7397,7 @@ arrayEpisodios = [
     "nome": "Sombras Rastejantes",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f3/Hanzo_and_Danzo.png/revision/latest/scale-to-width-down/350?cb=20140123175229",
+    "source":"1wV9IlkriJnPzJiBpwx_UbqhzGtUQdfiO",
     "personagens":[
         "Kakashi Hatake",
         "Jiraiya",
@@ -7069,6 +7416,7 @@ arrayEpisodios = [
     "nome": "Renascimento: Akatsuki",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/43/Shinsei_Akatsuki.png/revision/latest/scale-to-width-down/350?cb=20140203043047",
+    "source":"1I6pXvjg9GylMor3f5RysaXEXDVIfcLoC",
     "personagens":[
         "Yahiko",
         "Nagato",
@@ -7084,6 +7432,7 @@ arrayEpisodios = [
     "nome": "A Máscara que Esconde o Coração",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/ff/Kakashi_Anbu.png/revision/latest/scale-to-width-down/350?cb=20140206124711",
+    "source":"1ebFZVbtedDYi1ON5hcEKwgYcyTQH1rbo",
     "personagens":[
         "Kakashi Hatake",
         "Rin Nohara",
@@ -7107,6 +7456,7 @@ arrayEpisodios = [
     "nome": "A Morte de Minato",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/65/Minato_and_Kushina_dead.png/revision/latest/scale-to-width-down/350?cb=20140213115708",
+    "source":"12e4s2BUtU6USj8dLG4rAkKXQkMEyXE9f",
     "personagens":[
         "Kakashi Hatake",
         "Minato Namikaze",
@@ -7124,6 +7474,7 @@ arrayEpisodios = [
     "nome": "As Células de Hashirama",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/59/Hashirama%27s_Cells.png/revision/latest/scale-to-width-down/350?cb=20160212002100",
+    "source":"1TBbtyhAgT6rHKVY9jAEynRMKH_DM2Bib",
     "personagens":[
         "Kakashi Hatake",
         "Minato Namikaze",
@@ -7141,6 +7492,7 @@ arrayEpisodios = [
     "nome": "Ninja Desertor: Orochimaru",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/53/Nukenin_Orochimaru.png/revision/latest/scale-to-width-down/350?cb=20140227125303",
+    "source":"1ub9jFy4u_-ffg4Coa3-3sl8e-Awxo85n",
     "personagens":[
         "Kakashi Hatake",
         "Orochimaru",
@@ -7157,6 +7509,7 @@ arrayEpisodios = [
     "nome": "Objeto de Pesquisa do Orochimaru",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/93/Orochimaru%27s_Test_Subject.png/revision/latest/scale-to-width-down/350?cb=20140309134359",
+    "source":"1082x66mYFaiOjmnITbBcTMEKcmPaaA-e",
     "personagens":[
         "Kakashi Hatake",
         "Yukimi",
@@ -7168,6 +7521,7 @@ arrayEpisodios = [
     "nome": "O Caminho de Cada Um",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/cd/Separate_Paths.png/revision/latest/scale-to-width-down/350?cb=20140308214109",
+    "source":"11SGbHHHBrgIX-aO4ZqXu7oHQR1D-W56B",
     "personagens":[
         "Kakashi Hatake",
         "Orochimaru",
@@ -7181,6 +7535,7 @@ arrayEpisodios = [
     "nome": "O Sharingan é o Alvo Capturado",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/7b/The_Targeted_Sharingan.png/revision/latest/scale-to-width-down/350?cb=20140313121134",
+    "source":"1kR_RXobkm02x1XRj4r1_BsjAgeNkaq0i",
     "personagens":[
         "Kakashi Hatake",
         "Hiruzen Sarutobi",
@@ -7194,6 +7549,7 @@ arrayEpisodios = [
     "nome": "Um Shinobi da Folha",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/bf/A_Shinobi_of_the_Leaf.png/revision/latest/scale-to-width-down/350?cb=20140320115519",
+    "source":"1esslVozlLMSv8JildVljlI08iwiFWtIL",
     "personagens":[
         "Kakashi Hatake",
         "Hiruzen Sarutobi",
@@ -7208,6 +7564,7 @@ arrayEpisodios = [
     "nome": "Um Uchiha da ANBU",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a2/Uchiha_Anbu.png/revision/latest/scale-to-width-down/350?cb=20140403183146",
+    "source":"1O6Er93mmjXdvqounSKTxN_fDlyfGnYbu",
     "personagens":[
         "Kakashi Hatake",
         "Might Guy",
@@ -7226,6 +7583,7 @@ arrayEpisodios = [
     "nome": "Golpe de Estado",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/13/K%C5%ABdet%C4%81.png/revision/latest/scale-to-width-down/350?cb=20140410213843",
+    "source":"1No_xD5JQyBoZTGI7Rp7Dcr1NnOe5j6T3",
     "personagens":[
         "Kakashi Hatake",
         "Itachi Uchiha",
@@ -7247,6 +7605,7 @@ arrayEpisodios = [
     "nome": "A Trágica Noite",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f3/Night_of_the_Tragedy.png/revision/latest/scale-to-width-down/350?cb=20140417120921",
+    "source":"1MvIZiwD-jvDhDgjNifi7eYTCALFiu7mR",
     "personagens":[
         "Kakashi Hatake",
         "Naruto Uzumaki",
@@ -7270,6 +7629,7 @@ arrayEpisodios = [
     "nome": "O Tutor Jonin",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/eb/Tanto_Jonin.png/revision/latest/scale-to-width-down/350?cb=20140427210533",
+    "source":"1niQfrvEqU9yxte4Fj_iIGf4mZ6t4WXlj",
     "personagens":[
         "Kakashi Hatake",
         "Hiruzen Sarutobi",
@@ -7290,6 +7650,7 @@ arrayEpisodios = [
     "nome": "Time Sete",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5f/Disambig_gray.svg/revision/latest/scale-to-width-down/34?cb=20070225221759",
+    "source":"1VZu8uiREkYy6cFemoySc_Cv_ihLhs-sU",
     "personagens":[
         "Kakashi Hatake",
         "Terceiro Hokage: Hiruzen Sarutobi",
@@ -7318,6 +7679,7 @@ arrayEpisodios = [
     "nome": "A Decisão de Kakashi",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/2a/Kakashi_no_Ketsui.png/revision/latest/scale-to-width-down/350?cb=20140515153452",
+    "source":"1uTPbBkgM_Vsq5YDfV2ohDAKiKM3BKfF8",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -7336,6 +7698,7 @@ arrayEpisodios = [
     "nome": "Jutsu da Aliança Shinobi!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/67/Allied_Forces_Jutsu.png/revision/latest/scale-to-width-down/350?cb=20150915092614",
+    "source":"109rY9ch7vKrRup0g1oFHR0GdAkk3CN3O",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -7372,6 +7735,7 @@ arrayEpisodios = [
     "nome": "Aqueles Conectados",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/be/Naruto_gives_Hinata_power.png/revision/latest/scale-to-width-down/350?cb=20140605131235",
+    "source":"1GU8xFRmSPXqCVxvCRNMULuykOotWYML8",
     "personagens":[
         "Naruto Uzumaki",
         "Hinata Hyuga",
@@ -7401,6 +7765,7 @@ arrayEpisodios = [
     "nome": "Aqueles que Dançam nas Sombras",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/03/Chapter616.png/revision/latest/scale-to-width-down/350?cb=20181018044530",
+    "source":"1fpXJynHWwXLuSTVBd0xaRpZtnZN5PpwQ",
     "personagens":[
         "Naruto Uzumaki",
         "Hinata Hyūga",
@@ -7434,6 +7799,7 @@ arrayEpisodios = [
     "nome": "Aqueles que Tudo Sabem",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/71/Previous_Hokage.png/revision/latest/scale-to-width-down/349?cb=20140620001907",
+    "source":"1xyOMs1X5NH9u7HbMJJe96bWYHC2VleUl",
     "personagens":[
         "Sasuke Uchiha",
         "Orochimaru",
@@ -7450,6 +7816,7 @@ arrayEpisodios = [
     "nome": "Hashirama e Madara",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/86/Hashirama_e_Madara.png/revision/latest?cb=20140723040645&path-prefix=pt-br",
+    "source":"1k77AFkVX7Fv-RGZrK6sBPWF2vRYwcQ4_",
     "personagens":[
         "Hashirama Senju",
         "Hashirama Senju (criança)",
@@ -7464,6 +7831,7 @@ arrayEpisodios = [
     "nome": "Era da Guerra Entre Nações",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/42/Clans.PNG/revision/latest/scale-to-width-down/180?cb=20150222045432",
+    "source":"158YU9YyypNIj_FDIN1eVODrCqZJKpQj0",
     "personagens":[
         "Hashirama Senju",
         "Tobirama Senju",
@@ -7482,6 +7850,7 @@ arrayEpisodios = [
     "nome": "O Sonho Verdadeiro",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/95/Hont%C5%8D_no_Yume.png/revision/latest/scale-to-width-down/350?cb=20140724122152",
+    "source":"1tR2XlNnSYExlQ67XQDdn9pBOkjNM7kOl",
     "personagens":[
         "Hashirama Senju",
         "Tobirama Senju",
@@ -7495,6 +7864,7 @@ arrayEpisodios = [
     "nome": "A Resposta de Sasuke",
     "filler": False,
     "thumbnail":"https://img1.ak.crunchyroll.com/i/spire1-tmb/f89c5249d0f86eda1127609e9592bdcc1406586643_main.jpg",
+    "source":"1siv5rOLeWevJVPJtwGvce5s5lTFzS1YT",
     "personagens":[
         "Sasuke Uchiha",
         "Karin",
@@ -7512,6 +7882,7 @@ arrayEpisodios = [
     "nome": "Buraco",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/fa/Kazaana.png/revision/latest/scale-to-width-down/350?cb=20140807122431",
+    "source":"1rMRHcwC52bJ04a4dTq2nGbs48vk7eGvH",
     "personagens":[
         "Naruto Uzumaki",
         "Kakashi Hatake",
@@ -7539,6 +7910,7 @@ arrayEpisodios = [
     "nome": "Algo que Preenche",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/1a/Umeru_Mono.png/revision/latest/scale-to-width-down/350?cb=20140814202855",
+    "source":"1AS0WciagdYjpb9KKJ1ftK848_f-QSVQZ",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -7572,6 +7944,7 @@ arrayEpisodios = [
     "nome": "Time Sete, Reunido!!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/fa/Team_7_summons.png/revision/latest/scale-to-width-down/350?cb=20140821154222",
+    "source":"1gqPycUYYtmsckc4KAZPQ32TheBiHieTJ",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -7600,6 +7973,7 @@ arrayEpisodios = [
     "nome": "O Novo Trio Sem Saída",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c1/New_three-way_deadlock.png/revision/latest/scale-to-width-down/350?cb=20140830001305",
+    "source":"1eQIFMU9k0m1EGOYrn0WHjuxXst_6r1Kg",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -7631,6 +8005,7 @@ arrayEpisodios = [
     "nome": "Kakashi VS Obito",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c4/Kakashi_vs_Obito.png/revision/latest/scale-to-width-down/350?cb=20140906005904",
+    "source":"1Z2ycssTgznwSRnbBLcHGTB4wshoK-2xI",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -7662,6 +8037,7 @@ arrayEpisodios = [
     "nome": "Instruções Para Capturar a Kyubi",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/ec/Ky%C5%ABbi_G%C5%8Ddatsu_Shirei.png/revision/latest/scale-to-width-down/350?cb=20140911114022",
+    "source":"1Fu8VqWBwVm3qbw3JQVSvH3IyOUXuHBxZ",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -7689,6 +8065,7 @@ arrayEpisodios = [
     "nome": "Naruto Contra Robô Naruto",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/73/Naruto_tai_Meka-Naruto.png/revision/latest/scale-to-width-down/350?cb=20140911160201",
+    "source":"1f-jYgRtwZm9zpCuTD25_Z9egyHvHrlGq",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -7711,6 +8088,7 @@ arrayEpisodios = [
     "nome": "O Jinchuriki do Jubi",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/de/Jinch%C5%ABriki_do_J%C5%ABbi_%28Anime%29.PNG/revision/latest?cb=20140921182038&path-prefix=pt-br",
+    "source":"1MVHId9qfYmMzo9--NYO4M201pdbj4iqN",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -7736,6 +8114,7 @@ arrayEpisodios = [
     "nome": "Abertura",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/72/Naruto_attacks_Obito_anime.png/revision/latest/scale-to-width-down/350?cb=20140925140701",
+    "source":"1l5166n6XXqUnOecYKhctQy_4tsIBL3Wb",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -7760,6 +8139,7 @@ arrayEpisodios = [
     "nome": "O Dia em Que Naruto Nasceu",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e7/Minato_and_Naruto_bump_fists.png/revision/latest/scale-to-width-down/350?cb=20141002132605",
+    "source":"1J2MXoRoA4zri4w7SttgDHWo1iiGaOHLx",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -7789,6 +8169,7 @@ arrayEpisodios = [
     "nome": "Árvore Divina",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e4/Ten-Tails_tree.png/revision/latest/scale-to-width-down/180?cb=20141026162440",
+    "source":"1KlJq10ExNXxrO2gLdDkR9ArcvF3hUxzM",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -7812,6 +8193,7 @@ arrayEpisodios = [
     "nome": "O Sonho do Shinobi",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/2e/First_Gokage_summit.png/revision/latest/scale-to-width-down/350?cb=20141016125138",
+    "source":"1pKwkmM7eSJDMdE6Ozgu_Zavt6SizXQ9x",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -7844,6 +8226,7 @@ arrayEpisodios = [
     "nome": "Perseguindo a Esperança",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/47/Kurama_Mode_and_Susanoo.png/revision/latest/scale-to-width-down/350?cb=20141023145406",
+    "source":"1558-SP-CcNLMUGZjNJ4fQldd8Lk4xXYU",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -7878,6 +8261,7 @@ arrayEpisodios = [
     "nome": "Coração Preenchido de Amigos",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c7/Susanoo_K11.png/revision/latest/scale-to-width-down/350?cb=20141030114650",
+    "source":"1dz1r3QjFRH1NQGLl5LMOsnUU5shm37_-",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -7904,6 +8288,7 @@ arrayEpisodios = [
     "nome": "Uchiha Obito",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Browse_icon.png/revision/latest?cb=20151125063353",
+    "source":"13OgGOnCQ00_gt93yUOC55Gv7Rzt91ANM",
     "personagens":[
         "Naruto Uzumaki",
         "Obito Uchiha",
@@ -7920,6 +8305,7 @@ arrayEpisodios = [
     "nome": "Sempre Estarei te Observando",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b4/I%27m_Always_Watching.png/revision/latest/scale-to-width-down/350?cb=20141113120152",
+    "source":"199TV192sres6wtZLRkWw_J6bha-QJMAe",
     "personagens":[
         "Naruto Uzumaki",
         "Obito Uchiha",
@@ -7936,6 +8322,7 @@ arrayEpisodios = [
     "nome": "A Promessa Cumprida",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/21/Biju_released.png/revision/latest/scale-to-width-down/350?cb=20141120132622",
+    "source":"1q17cX8WklgtPLxIO_pYHjZ66_Fc1wEtI",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -7963,6 +8350,7 @@ arrayEpisodios = [
     "nome": "Meu Primeiro Amigo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/bd/My_First_Friend.png/revision/latest/scale-to-width-down/350?cb=20141127133409",
+    "source":"1gK8WC86PQYLTuo3PeRfbn7uxIxRE5sSI",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -7985,6 +8373,7 @@ arrayEpisodios = [
     "nome": "Minha Adorada Irmãzona",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/0d/The_Adored_Elder_Sister.png/revision/latest/scale-to-width-down/350?cb=20150111215617",
+    "source":"1cBsGP50slORBdih1akwMLt6rAR81vMvA",
     "personagens":[
         "Naruto Uzumaki",
         "Hinata Hyuga",
@@ -8000,6 +8389,7 @@ arrayEpisodios = [
     "nome": "A Decisão de Hanabi",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/19/Hanabi%27s_Decision.png/revision/latest/scale-to-width-down/350?cb=20141204130721",
+    "source":"1r0ECf-0ejtpNWBNuD6aUSEPykvp6QtFF",
     "personagens":[
         "Naruto Uzumaki",
         "Hinata Hyuga",
@@ -8016,6 +8406,7 @@ arrayEpisodios = [
     "nome": "Uchiha Madara, Ascensão",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/63/Madara_targets_Tailed_Beasts.png/revision/latest/scale-to-width-down/350?cb=20141211121603",
+    "source":"1HEHAfs1dg2kHENd6tHW6mc6-g35Mjdn0",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -8034,6 +8425,7 @@ arrayEpisodios = [
     "nome": "Coração Escondido",
     "filler": False,
     "thumbnail":"https://anitube.cz/media/videos/tmb/49349/default.jpg",
+    "source":"1oNwUPsE4RvwSaUjqbClrf-UZqe7SBQDR",
     "personagens":[
         "Naruto Uzumaki",
         "Minato Namikaze",
@@ -8060,6 +8452,7 @@ arrayEpisodios = [
     "nome": "Um Verdadeiro Fim",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/30/Madara_stabs_Sasuke1.png/revision/latest/scale-to-width-down/350?cb=20141225130556",
+    "source":"1oHDNSVcvc5nPrUm-O8c5pYUyofBCAht1",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -8094,6 +8487,7 @@ arrayEpisodios = [
     "nome": "Novo Exame Chunin",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c7/Suna_and_Konoha_meeting.png/revision/latest/scale-to-width-down/350?cb=20150108135730",
+    "source":"1qqS3o0tCljUhIAFPEJrqhhjm4GBpZI0Z",
     "personagens":[
         "Naruto Uzumaki",
         "Jiraiya",
@@ -8127,6 +8521,7 @@ arrayEpisodios = [
     "nome": "Exames Chunin, Começa!",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/df/Genin_entering_Konoha.png/revision/latest/scale-to-width-down/350?cb=20150115122654",
+    "source":"1U74wwXc77Xwxv1IahAdvQLDJSjyyMk_W",
     "personagens":[
         "Naruto Uzumaki",
         "Jiraiya",
@@ -8153,6 +8548,7 @@ arrayEpisodios = [
     "nome": "As Três Questões",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/27/The_Written_Exam.png/revision/latest/scale-to-width-down/350?cb=20150122151912",
+    "source":"1e61v2DNfhD2iJ2MWO1Y5seIPC6Sp9lZf",
     "personagens":[
         "Naruto Uzumaki",
         "Shikamaru Nara",
@@ -8192,6 +8588,7 @@ arrayEpisodios = [
     "nome": "Aquele Digno de Ser Líder",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/2d/One_Worthy_as_a_Leader.png/revision/latest/scale-to-width-down/350?cb=20150130030621",
+    "source":"1autCeIWX2qNT14Q2zheRW4Pmb0FgEcp4",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -8231,6 +8628,7 @@ arrayEpisodios = [
     "nome": "O Segundo Exame, Véspera",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d2/Fu%27s_entrance.png/revision/latest/scale-to-width-down/350?cb=20150205131133",
+    "source":"1yUQeDEEJt8EP0qlP3F6g_EhhT4EW6E5c",
     "personagens":[
         "Sakura Haruno",
         "Chouji Akimichi",
@@ -8266,6 +8664,7 @@ arrayEpisodios = [
     "nome": "Sobrevivência no Deserto Infernal",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/03/Demon_Desert_Survival.png/revision/latest/scale-to-width-down/350?cb=20150212125559",
+    "source":"17IVG-hU7f-wHUSYYihbmc1khiTSOEcRG",
     "personagens":[
         "Quinto Kazekage: Gaara",
         "Neji Hyuga",
@@ -8285,6 +8684,7 @@ arrayEpisodios = [
     "nome": "Como um Usuário de Taijutsu...",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/97/Lee_and_Shira.png/revision/latest/scale-to-width-down/350?cb=20150219125024",
+    "source":"1d2GHMMJUW6mLtur07KGjKSl6I2MOsGcB",
     "personagens":[
         "Quinto Kazekage: Gaara",
         "Neji Hyuga",
@@ -8301,6 +8701,7 @@ arrayEpisodios = [
     "nome": "Aquele que Domina",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/4a/The_Ultimate.png/revision/latest/scale-to-width-down/350?cb=20150226121349",
+    "source":"1qrQDkVne08-A_gNR8M82Ks_yXTeJfntg",
     "personagens":[
         "Quinto Kazekage: Gaara",
         "Neji Hyuga",
@@ -8320,6 +8721,7 @@ arrayEpisodios = [
     "nome": "Fuga VS Perseguição",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f3/Escape_vs_Pursuit.png/revision/latest/scale-to-width-down/350?cb=20150305124309",
+    "source":"1GU6VqONrpbhtwLopCuKq8RkYccwU-SLn",
     "personagens":[
         "Kiba Inuzuka",
         "Hinata Hyuga",
@@ -8334,6 +8736,7 @@ arrayEpisodios = [
     "nome": "Coragem Inabalável",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/32/Unwavering_Gutsiness.png/revision/latest/scale-to-width-down/350?cb=20150313023346",
+    "source":"1KgKQk_xxzKTUKd_Vz6zhofnvq3V2Fi7i",
     "personagens":[
         "Kiba Inuzuka",
         "Hinata Hyuga",
@@ -8349,6 +8752,7 @@ arrayEpisodios = [
     "nome": "O Problema da Tenten",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/9e/Tenten_no_Nayami.png/revision/latest/scale-to-width-down/350?cb=20150319140111",
+    "source":"1K63RSUvDxX_NXsInVjCUYIEiIhfAM21F",
     "personagens":[
         "Tenten",
         "Neji Hyuga",
@@ -8369,6 +8773,7 @@ arrayEpisodios = [
     "nome": "A Dupla Aprisionada",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b9/Tenten_and_Ajisai_watching_the_giant_ants.png/revision/latest/scale-to-width-down/350?cb=20150601112313",
+    "source":"1BBSXb1E1DtVL2VNTnjsxw3X2gzJJ9JMZ",
     "personagens":[
         "Tenten",
         "Neji Hyuga",
@@ -8388,6 +8793,7 @@ arrayEpisodios = [
     "nome": "Meu Próprio Lugar",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d1/Jibun_no_Ibasho.png/revision/latest/scale-to-width-down/350?cb=20150402155416",
+    "source":"1A5QNL86Ncs34pC7gwmqEN_XojvxBxACI",
     "personagens":[
         "Sakura Haruno",
         "Chouji Akimichi",
@@ -8406,6 +8812,7 @@ arrayEpisodios = [
     "nome": "Clã Yamanaka: Ninjutsu Secreto",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/6f/Ino_Shika_Ch%C5%8D_at_memorial.png/revision/latest/scale-to-width-down/350?cb=20150409161603",
+    "source":"1YMri4avZ6ZCbAzxE7sHBqywru0YuMkgR",
     "personagens":[
         "Sakura Haruno",
         "Chouji Akimichi",
@@ -8423,6 +8830,7 @@ arrayEpisodios = [
     "nome": "A Marionete Amaldiçoada",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/10/Noroi_No_Ningy%C5%8D.png/revision/latest/scale-to-width-down/350?cb=20180308082926",
+    "source":"1JXNoq0Zx8abO14h01yNO7bFnkruBhR_7",
     "personagens":[
         "Sakura Haruno",
         "Ino Yamanaka",
@@ -8442,6 +8850,7 @@ arrayEpisodios = [
     "nome": "As Costas Daqueles Dois",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5e/Futari_no_Senaka.png/revision/latest/scale-to-width-down/350?cb=20150429143914",
+    "source":"1uQM1io_P3DKqIgejt0iIgtc6JtgXwsVY",
     "personagens":[
         "Sakura Haruno",
         "Ino Yamanaka",
@@ -8461,6 +8870,7 @@ arrayEpisodios = [
     "nome": "A Conspiração Começa a se Mover",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/0a/Bunpuku%27s_Tea_Kettle.png/revision/latest/scale-to-width-down/350?cb=20150430121403",
+    "source":"1pZ4TRmG4SNOPe9F0sPhQzL6T2Bbdqgnc",
     "personagens":[
         "Quinto Kazekage: Gaara",
         "Neji Hyuga",
@@ -8485,6 +8895,7 @@ arrayEpisodios = [
     "nome": "O Biju Alvejado",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/9f/Shukaku_Being_Extracted.png/revision/latest/scale-to-width-down/350?cb=20150514121910",
+    "source":"1JisWEPzrcDbvQMCxF3OCkujF84SfaJbt",
     "personagens":[
         "Quinto Kazekage: Gaara",
         "Neji Hyuga",
@@ -8511,6 +8922,7 @@ arrayEpisodios = [
     "nome": "O Julgamento de Neji",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/1e/Neji_Leading_Resue_Team.png/revision/latest/scale-to-width-down/350?cb=20150514144823",
+    "source":"1_BgRy4bbPWWkawOQlyiopefcUn_aVWkA",
     "personagens":[
         "Quinto Kazekage: Gaara",
         "Neji Hyuga",
@@ -8532,6 +8944,7 @@ arrayEpisodios = [
     "nome": "Sentimentos Confiados ao Futuro",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/91/Tsunade_Promoting_Genin.png/revision/latest/scale-to-width-down/350?cb=20150601130715",
+    "source":"1MrnmwBFBH75sgM8jF0wbGdLHtAvX0Ib3",
     "personagens":[
         "Naruto Uzumaki",
         "Jiraiya",
@@ -8573,6 +8986,7 @@ arrayEpisodios = [
     "nome": "À Beira da Morte",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/77/Gaara_and_Sakura_flying.png/revision/latest/scale-to-width-down/350?cb=20150528182225",
+    "source":"1HefgAUCsMe16IKlBeh1EWQoY5uM7qS8e",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -8599,6 +9013,7 @@ arrayEpisodios = [
     "nome": "Os Dois Mangekyos",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/48/Futatsu_no_Mangeky%C5%8D.png/revision/latest/scale-to-width-down/350?cb=20150604161653",
+    "source":"196fUxwJIKzULNsw_fm9Mn8r2SFzou8TI",
     "personagens":[
         "Kakashi Hatake",
         "Obito Uchiha",
@@ -8617,6 +9032,7 @@ arrayEpisodios = [
     "nome": "Formação: Time Minato",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b6/The_Formation_of_Team_Minato.png/revision/latest/scale-to-width-down/350?cb=20150613152017",
+    "source":"1ImtldlHcJBd270PDhsGPI9mAzGaqmkiv",
     "personagens":[
         "Minato Namikaze",
         "Kakashi Hatake (criança)",
@@ -8631,6 +9047,7 @@ arrayEpisodios = [
     "nome": "Você É Meu Apoio",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5c/Kakashi_and_Obito.png/revision/latest/scale-to-width-down/350?cb=20150625113419",
+    "source":"15FEOw4pK3LW_FpIQAckcqZ6fT30QHAGs",
     "personagens":[
         "Minato Namikaze",
         "Kakashi Hatake (criança)",
@@ -8649,6 +9066,7 @@ arrayEpisodios = [
     "nome": "Besta Verde VS Seis Caminhos de Madara",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/cf/Guy_Opening_7th_Gate.png/revision/latest/scale-to-width-down/350?cb=20150709214439",
+    "source":"10P-dc4-PcSTm6xoEVjXgdXzPvbqb1u3H",
     "personagens":[
         "Might Guy & Duy",
         "Kakashi Hatake",
@@ -8672,6 +9090,7 @@ arrayEpisodios = [
     "nome": "A Juventude do Papai",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/63/Wikipedia-logo.png/revision/latest/scale-to-width-down/35?cb=20070429123042",
+    "source":"1Wxbjo6XqCJRlLRv3_wW_RNxPxCjz6FGO",
     "personagens":[
         "Might Guy & Duy",
         "Might Guy (criança)",
@@ -8691,6 +9110,7 @@ arrayEpisodios = [
     "nome": "A Formação do Hachimon Tonko",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/26/Guy%27s_Eight_Inner_Gates.png/revision/latest/scale-to-width-down/350?cb=20150709142413",
+    "source":"1naaK9D08tKStbf1ffSOmxPoql5erNttJ",
     "personagens":[
         "Naruto Uzumaki",
         "Hagoromo Ōtsutsuki",
@@ -8707,6 +9127,7 @@ arrayEpisodios = [
     "nome": "O Eremita dos Seis Caminhos",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/ea/Naruto_and_Sasuke_obtain_Rikudo_Power.png/revision/latest/scale-to-width-down/350?cb=20150730121656",
+    "source":"1w3u0kG1k3tu7cPZYqwp74lvQtL2ozsza",
     "personagens":[
         "Naruto Uzumaki",
         "Hagoromo utsutsuki",
@@ -8732,6 +9153,7 @@ arrayEpisodios = [
     "nome": "Aqueles Que Herdarão",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c1/Konohmaru_Learning_Rasengan.png/revision/latest/scale-to-width-down/350?cb=20171119011218",
+    "source":"11bApzuPfJBr5qcCMG0-jKkTFNKJn1ykW",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -8748,6 +9170,7 @@ arrayEpisodios = [
     "nome": "O Rival de Naruto",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/28/Naruto_no_Raibaru.png/revision/latest/scale-to-width-down/350?cb=20160415000410",
+    "source":"1n7PjuroffW3UHT3ZQO3fttI2vDG3hjsW",
     "personagens":[
         "Naruto Uzumaki",
         "Sakura Haruno",
@@ -8763,6 +9186,7 @@ arrayEpisodios = [
     "nome": "Ascenção",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e6/Naruto_and_Sasuke.png/revision/latest/scale-to-width-down/350?cb=20150813123920",
+    "source":"1Rmda_TjZCSAoi_eWr4b3TYm6Rtw2HJpT",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -8785,6 +9209,7 @@ arrayEpisodios = [
     "nome": "Sonho Infinito",
     "filler": False,
     "thumbnail":"https://img1.ak.crunchyroll.com/i/spire1-tmb/ad8289c17daa5c425a76fecc912a930f1439837871_main.jpg",
+    "source":"1-B4mKAI9mSIcAaRkflwUI7wPW8dlnp0P",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -8803,6 +9228,7 @@ arrayEpisodios = [
     "nome": "Tsukuyomi Infinito",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d1/Kaguya_Plan_Complete.png/revision/latest/scale-to-width-down/350?cb=20150827121344",
+    "source":"13wVA6DHtnRhHJEJGeEngnGrTxn6_H_fA",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -8835,6 +9261,7 @@ arrayEpisodios = [
     "nome": "Para o Mundo dos Sonhos",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c7/Tenten_Caught.png/revision/latest/scale-to-width-down/350?cb=20150903110243",
+    "source":"1Srt4idEdEIIWuqqARXFW39UGqrK7j-LE",
     "personagens":[
         "Tenten",
         "Menma Namikaze",
@@ -8857,6 +9284,7 @@ arrayEpisodios = [
     "nome": "O Lugar da Tenten",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/21/Tenten%27s_dream.png/revision/latest/scale-to-width-down/350?cb=20150903144031",
+    "source":"1MKFQxJrtIBPo_8CawQQSY_eieFzNLPmB",
     "personagens":[
         "Tenten",
         "Menma Namikaze",
@@ -8877,6 +9305,7 @@ arrayEpisodios = [
     "nome": "O Rap Crônico do Killer Bee: Pergaminho do Céu",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a1/Killer_Bee_Rappuden.png/revision/latest/scale-to-width-down/350?cb=20150910114803",
+    "source":"1SVdXnSOEBk1tvojXCaXJxMVA8d28tbXS",
     "personagens":[
         "Killer B",
         "Naruto Uzumaki",
@@ -8901,6 +9330,7 @@ arrayEpisodios = [
     "nome": "O Rap Crônico do Killer Bee: Pergaminho do Terra",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b8/Jinch%C5%ABriki.png/revision/latest/scale-to-width-down/350?cb=20180529203436",
+    "source":"1KGzw59T1hP3bm-GV_7GY62GVMWGnuO0n",
     "personagens":[
         "Killer B",
         "Naruto Uzumaki",
@@ -8928,6 +9358,7 @@ arrayEpisodios = [
     "nome": "Aquele Sorriso Novamente",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/44/To_See_That_Smile.png/revision/latest/scale-to-width-down/350?cb=20150924131845",
+    "source":"1cNr_Hyl5rm6JdWCpuIzBAQFwoc2t2nq2",
     "personagens":[
         "Karin",
         "Sasuke Uchiha",
@@ -8943,6 +9374,7 @@ arrayEpisodios = [
     "nome": "Shinobi Perdedor",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/eb/Naruto_Meets_Kurama.png/revision/latest/scale-to-width-down/350?cb=20151001114247",
+    "source":"1NYmpqdbBvez1S6O7tr9FqV9HoKbS_dBJ",
     "personagens":[
         "Tsunade",
         "Naruto Uzumaki",
@@ -8966,6 +9398,7 @@ arrayEpisodios = [
     "nome": "Partida: Missão de Busca",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/76/Hidan_Wielding_Scythe.png/revision/latest/scale-to-width-down/350?cb=20151008114819",
+    "source":"1bzpAxJnlDQx-l4y-5iNF4Rfg6s_ociBH",
     "personagens":[
         "Tsunade",
         "Naruto Uzumaki",
@@ -8997,6 +9430,7 @@ arrayEpisodios = [
     "nome": "Time Jiraiya",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f6/Team_jiraiya.png/revision/latest/scale-to-width-down/320?cb=20140704194155",
+    "source":"1WNCCAqBkxPuIXNDNoIQNnCQ4eq-JnZ59",
     "personagens":[
         "Tsunade",
         "Naruto Uzumaki",
@@ -9025,6 +9459,7 @@ arrayEpisodios = [
     "nome": "Prioridades",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/db/Neji_and_Naruto_vs_Hy%C5%ABga.png/revision/latest/scale-to-width-down/350?cb=20151024025336",
+    "source":"1LN_phBbUDz88u34mUoKQyYBqxCaY9j14",
     "personagens":[
         "Tsunade",
         "Naruto Uzumaki",
@@ -9053,6 +9488,7 @@ arrayEpisodios = [
     "nome": "Homem Mascarado",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c8/The_Masked_Man.png/revision/latest/scale-to-width-down/350?cb=20151105150801",
+    "source":"1t2-JYSJMAZWLAdt0RhKBxLjO9N9BT6Xd",
     "personagens":[
         "Tsunade",
         "Jiraiya",
@@ -9084,6 +9520,7 @@ arrayEpisodios = [
     "nome": "Poder Selado",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e2/The_Sealed_Power.png/revision/latest/scale-to-width-down/350?cb=20151113080256",
+    "source":"1fGmxl4YcEc-SDJ_NUyHxH9__NGwGKc4i",
     "personagens":[
         "Tsunade",
         "Shizune",
@@ -9114,6 +9551,7 @@ arrayEpisodios = [
     "nome": "Regras ou Companheiros?",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/0e/Konoha_Rookies_Vs_Puppets.png/revision/latest/scale-to-width-down/350?cb=20151119121810",
+    "source":"1O8EUbfa0HlJK1gdWdVGB1h3dSMgvS203",
     "personagens":[
         "Tsunade",
         "Shizune",
@@ -9145,6 +9583,7 @@ arrayEpisodios = [
     "nome": "Criança da Profecia",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/15/Naruto_Vs_Sasori.png/revision/latest/scale-to-width-down/350?cb=20151126120313",
+    "source":"1_DklwWYG-KMVd3F50j-nR23ufObP8-u1",
     "personagens":[
         "Tsunade",
         "Shizune",
@@ -9178,6 +9617,7 @@ arrayEpisodios = [
     "nome": "Pássaro Engaiolado",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/ff/Caged_Bird.png/revision/latest/scale-to-width-down/350?cb=20151203114205",
+    "source":"1qA-R0WJnQyhkneQX_RNjv0VQuRPhAb4V",
     "personagens":[
         "Tsunade",
         "Shizune",
@@ -9211,6 +9651,7 @@ arrayEpisodios = [
     "nome": "Retorno",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/4f/Minato_Teaching_Rasengan.png/revision/latest/scale-to-width-down/350?cb=20151210123754",
+    "source":"1mO0JLDxQpCjjImK9eUhOsLQLH2e3eWRq",
     "personagens":[
         "Tsunade",
         "Shizune",
@@ -9239,6 +9680,7 @@ arrayEpisodios = [
     "nome": "Caminho Mútuo",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5e/Sakura%27s_Motivation.png/revision/latest/scale-to-width-down/350?cb=20151217113911",
+    "source":"1h3tMGV4WrRi5H96ZQfhQNiz1jta7kXf3",
     "personagens":[
         "Tsunade",
         "Naruto Uzumaki",
@@ -9261,6 +9703,7 @@ arrayEpisodios = [
     "nome": "Diferença de Poder",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e6/The_Difference_in_Power.png/revision/latest/scale-to-width-down/350?cb=20151224114019",
+    "source":"1RMHnejgOXqCSIV9S5AX4R6k8KXxfXxpR",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9283,6 +9726,7 @@ arrayEpisodios = [
     "nome": "Abandonando a Vila",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/66/Leaving_the_Village.png/revision/latest/scale-to-width-down/350?cb=20160114123931",
+    "source":"1PidnDmtQ6fi_Z3Fg3nRUZOFIDl9IXeQP",
     "personagens":[
         "Tsunade",
         "Naruto Uzumaki",
@@ -9308,6 +9752,7 @@ arrayEpisodios = [
     "nome": "Perseguidores",
     "filler": True,
     "thumbnail":"https://i.ytimg.com/vi/3WZZVhFVRJ0/maxresdefault.jpg",
+    "source":"1ZQoIqVLKk7DPrEZ6ADPVFbNxJvJ6ggov",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9333,6 +9778,7 @@ arrayEpisodios = [
     "nome": "Colisão",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/f6/Naruto_Vs_Sasuke.png/revision/latest/scale-to-width-down/350?cb=20160128113740",
+    "source":"1BdqbSWKnQTMJJU3FOZXhqVFJogYQDmnf",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9351,6 +9797,7 @@ arrayEpisodios = [
     "nome": "Mais Uma Lua",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b2/Another_Moon.png/revision/latest/scale-to-width-down/350?cb=20160204114109",
+    "source":"1aKGm3-ADIKz8ZvrgZlXH0TcBfrorGiyk",
     "personagens":[
         "Tsunade",
         "Shizune",
@@ -9379,6 +9826,7 @@ arrayEpisodios = [
     "nome": "Companheiro",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d5/Comrade.png/revision/latest/scale-to-width-down/350?cb=20160211185158",
+    "source":"1RjQ10y2chnIYHOAxsAr67oUXast6jmNr",
     "personagens":[
         "Tsunade",
         "Naruto Uzumaki",
@@ -9402,6 +9850,7 @@ arrayEpisodios = [
     "nome": "A União dos Shinobi",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/27/The_Shinobi_Unite.png/revision/latest/scale-to-width-down/350?cb=20160218115108",
+    "source":"1xzhWQmkHfeTmzdjY1E5h7xL1QhapDna8",
     "personagens":[
         "Tsunade",
         "Jiraiya",
@@ -9437,6 +9886,7 @@ arrayEpisodios = [
     "nome": "Rival",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/d2/Dream_Sasuke_Vs_Naruto.png/revision/latest/scale-to-width-down/350?cb=20160225113643",
+    "source":"1GLbId3qdDFrr8EsUMQGhpHbMkbTs-g7x",
     "personagens":[
         "Tsunade",
         "Jiraiya",
@@ -9453,6 +9903,7 @@ arrayEpisodios = [
     "nome": "Vida que Nasce, Vida que Morre",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/0b/Itachi_Watching_War.png/revision/latest/scale-to-width-down/350?cb=20160303121330",
+    "source":"1tlvmT2zeuggYoEmnbXLKp_zCNPzcTAX4",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9491,6 +9942,7 @@ arrayEpisodios = [
     "nome": "Gênio",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/07/Shisui_and_Itachi.png/revision/latest/scale-to-width-down/350?cb=20160310114913",
+    "source":"1uJnQ4MliKh-K5FvoFZTuws9VDEgadT8w",
     "personagens":[
         "Itachi Uchiha (criança)",
         "Sasuke Uchiha (infant)",
@@ -9508,6 +9960,7 @@ arrayEpisodios = [
     "nome": "Dor de Viver",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c3/Itachi_Mourning_Tenma.png/revision/latest/scale-to-width-down/350?cb=20160317115108",
+    "source":"1mDvmAtOXQf5LAYuSZAJk9SZCTMjHJKce",
     "personagens":[
         "Itachi Uchiha (criança)",
         "Sasuke Uchiha (baby)",
@@ -9524,6 +9977,7 @@ arrayEpisodios = [
     "nome": "O Pedido de Shisui",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/d/de/Itachi_and_Shisui.png/revision/latest/scale-to-width-down/350?cb=20160324155859",
+    "source":"1Jpa9j6lQJQhqOKUAQa9ziQU_oHz28-Gz",
     "personagens":[
         "Itachi Uchiha",
         "Itachi Uchiha (criança)",
@@ -9540,6 +9994,7 @@ arrayEpisodios = [
     "nome": "Noite de Luar",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/6/62/Tsukiyo.png/revision/latest/scale-to-width-down/350?cb=20160407120514",
+    "source":"1Jw7UlGJztYUU332XlnCpCpKMzjx6vdf_",
     "personagens":[
         "Itachi Uchiha",
         "Naruto Uzumaki",
@@ -9562,6 +10017,7 @@ arrayEpisodios = [
     "nome": "A Escuridão da Akatsuki",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5c/Formation_C.png/revision/latest/scale-to-width-down/350?cb=20160414124250",
+    "source":"1GsA3rarxgMh9uLvbKC1Gaq0dmciqs5HH",
     "personagens":[
         "Itachi Uchiha",
         "Quarto Mizukage: Yagura",
@@ -9580,6 +10036,7 @@ arrayEpisodios = [
     "nome": "Parceiro",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/bd/Sasori_and_Deidara.png/revision/latest/scale-to-width-down/350?cb=20160421122505",
+    "source":"1FMqnH_teD3kJ-PERazx7eOQ4jDtSW6CA",
     "personagens":[
         "Itachi Uchiha",
         "Konan",
@@ -9596,6 +10053,7 @@ arrayEpisodios = [
     "nome": "Verdade",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b4/Sasuke%27s_Awakened_Mangekyou_Sharingan.PNG/revision/latest/scale-to-width-down/350?cb=20091224152227",
+    "source":"1RtWp0PWQJGi0hVc6ePueTxf0P-wTAnJr",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -9609,6 +10067,7 @@ arrayEpisodios = [
     "nome": "Aquela do Começo",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c1/Kaguya%27s_revival.png/revision/latest/scale-to-width-down/350?cb=20160505121840",
+    "source":"1-8c1bSSTSmRdnP-E7WY0EmAyabtkCljG",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9628,6 +10087,7 @@ arrayEpisodios = [
     "nome": "Otsutsuki Kaguya",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Browse_icon.png/revision/latest?cb=20151125063353",
+    "source":"1zIaM4KKty4F27wgoUvG3sMgF0llfAN9n",
     "personagens":[
         "Kaguya Ōtsutsuki",
         "Tenji",
@@ -9641,6 +10101,7 @@ arrayEpisodios = [
     "nome": "Hagoromo e Hamura",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/bd/Hagoromo_%26_Hamura.png/revision/latest/scale-to-width-down/350?cb=20170713004045",
+    "source":"1tpnwbd7Imvz2zq-RPIp83AkTpzrOkmAi",
     "personagens":[
         "Kaguya utsutsuki",
         "Zetsu",
@@ -9655,6 +10116,7 @@ arrayEpisodios = [
     "nome": "Passado Fabricado",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/8a/Kaguya_Vs_Sons.png/revision/latest/scale-to-width-down/350?cb=20160526115253",
+    "source":"1VrHhrWJ7eIzDyjK2-0u9gDW4naelKmNL",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9670,6 +10132,7 @@ arrayEpisodios = [
     "nome": "Número 1 em Imprevistos!",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/23/Sexy_Reverse_Harem_Technique.png/revision/latest/scale-to-width-down/350?cb=20160602120148",
+    "source":"1t5bemb3C8NG4LLT6rWovyd4ZiM84O9HX",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9691,6 +10154,7 @@ arrayEpisodios = [
     "nome": "Ninshu",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/97/Hagoromo_With_Followers.png/revision/latest/scale-to-width-down/350?cb=20160609113337",
+    "source":"1JLUosoxSGQ6F0ylOEZgq5lGC_Dv1aVBN",
     "personagens":[
         "Hagoromo utsutsuki",
         "Hashirama Senju",
@@ -9705,6 +10169,7 @@ arrayEpisodios = [
     "nome": "Ashura e Indra",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a5/Asura_and_Indra.png/revision/latest/scale-to-width-down/350?cb=20160616140615",
+    "source":"132mBNOQPhY-J3nQ2ZO5wRlLPyf-MRvhg",
     "personagens":[
         "Hagoromo utsutsuki",
         "Hagoromo utsutsuki (young)",
@@ -9718,6 +10183,7 @@ arrayEpisodios = [
     "nome": "Jornada Tumultuosa",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/72/Shiren_no_Tabi.png/revision/latest/scale-to-width-down/350?cb=20160630114042",
+    "source":"19XQ0gk92-7-u7YJopUTo8KAMlzjRzX__",
     "personagens":[
         "Hagoromo utsutsuki",
         "Futami",
@@ -9731,6 +10197,7 @@ arrayEpisodios = [
     "nome": "A Decisão do Ashura",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/f/fe/Asura%27s_Wind_Release.png/revision/latest/scale-to-width-down/350?cb=20160707113315",
+    "source":"18JSqG1opwvoebz_49All5649TpHVIU9q",
     "personagens":[
         "Hagoromo utsutsuki",
         "Futami",
@@ -9745,6 +10212,7 @@ arrayEpisodios = [
     "nome": "O Sucessor",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/59/Chapter_171.jpg/revision/latest/scale-to-width-down/322?cb=20100627044658",
+    "source":"1OqjNeolY8qzE9v340Isoz9qWOLNIVrjZ",
     "personagens":[
         "Hagoromo Ōtsutsuki",
         "Futami",
@@ -9757,6 +10225,7 @@ arrayEpisodios = [
     "nome": "Uma Missão Especial",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/70/A_Special_Mission.png/revision/latest/scale-to-width-down/350?cb=20160728115733",
+    "source":"106VaPqn0vOiq3wFTfk4_NXMjIoMUnzvQ",
     "personagens":[
         "Kakashi Hatake",
         "Naruto Uzumaki",
@@ -9780,6 +10249,7 @@ arrayEpisodios = [
     "nome": "Mentes Conectadas",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a2/Rescuing_Sasuke.png/revision/latest/scale-to-width-down/350?cb=20160804120832",
+    "source":"1vCNoaEgUfg4NTWpSvOtN9B_S-gslb7mZ",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9797,6 +10267,7 @@ arrayEpisodios = [
     "nome": "Sempre os Dois",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/2e/The_Two_of_Them_Always.png/revision/latest/scale-to-width-down/350?cb=20160822000644",
+    "source":"1FfzBY2aSwdburpMXkHZXoglnrXDD74eo",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9817,6 +10288,7 @@ arrayEpisodios = [
     "nome": "Melhor Você...",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/ba/Obito%27s_Last_Words.png/revision/latest/scale-to-width-down/350?cb=20160902142707",
+    "source":"1TvP17Cda9gZAeGlg9LjO6xnTpdUjBkWH",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9835,6 +10307,7 @@ arrayEpisodios = [
     "nome": "Sharingan, Novamente",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/4f/The_Sharingan_Revived.png/revision/latest/scale-to-width-down/350?cb=20160825114154",
+    "source":"1o2fwJHO3cI_d2df48UEhvMBxpxnZfgXL",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9860,6 +10333,7 @@ arrayEpisodios = [
     "nome": "Parabéns",
     "filler": False,
     "thumbnail":"https://img1.ak.crunchyroll.com/i/spire2-tmb/d011ef3707c7cf0b74fd738adca669421472671513_main.jpg",
+    "source":"1lcro_q3AXKCSUvpIAHGwsFGKHDAkRfq6",
     "personagens":[
         "Naruto Uzumaki",
         "Minato Namikaze",
@@ -9887,6 +10361,7 @@ arrayEpisodios = [
     "nome": "O Vale do Fim",
     "filler": False,
     "thumbnail":"https://img1.ak.crunchyroll.com/i/spire4-tmb/955b61ebf8461ea8faa85d0f326a5b361473292988_main.jpg",
+    "source":"1ZYm397LW7-PBKoEf240yyoSyKKa7--vl",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9909,6 +10384,7 @@ arrayEpisodios = [
     "nome": "A Batalha Final",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/40/Kurama_vs_Susanoo.png/revision/latest/scale-to-width-down/350?cb=20160929112839",
+    "source":"1eArKGkp2QbKUpl9it_wza9BjWcEqUQaC",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9923,6 +10399,7 @@ arrayEpisodios = [
     "nome": "Naruto e Sasuke",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/4d/Sasuke_Vs_Naruto.png/revision/latest/scale-to-width-down/350?cb=20161001023655",
+    "source":"1lBhVpaN9VQ8Y9-lxbgMCzE5xBvw4a_Dn",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9937,6 +10414,7 @@ arrayEpisodios = [
     "nome": "O Símbolo da União",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b4/Naruto_%26_Sasuke_Wounded.png/revision/latest/scale-to-width-down/350?cb=20161006113834",
+    "source":"1M2NtxNNZ6FDfmwE7qwKub3bCSnx9Tr8K",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9947,6 +10425,7 @@ arrayEpisodios = [
     "nome": "Uzumaki Narutoǃǃ",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/5f/Disambig_gray.svg/revision/latest/scale-to-width-down/34?cb=20070225221759",
+    "source":"1KscSlNVlVIFW73IL6-syVDEu0A1RT_kD",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9976,6 +10455,7 @@ arrayEpisodios = [
     "nome": "Naruto e Hinata",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/bc/Naruto_and_Hinata.png/revision/latest/scale-to-width-down/350?cb=20161020112112",
+    "source":"1EhqrNx8SJlu6AzVZMJykaX0hPQCe8kM3",
     "personagens":[
         "Naruto Uzumaki",
         "Sasuke Uchiha",
@@ -9993,6 +10473,7 @@ arrayEpisodios = [
     "nome": "Sasuke e Sakura",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/74/Sasuke_and_Sakura.png/revision/latest/scale-to-width-down/350?cb=20161027161128",
+    "source":"1DgAcoAyCIwtOCZ6j_jREq5vQNNawfgGB",
     "personagens":[
         "Sasuke Uchiha",
         "Itachi Uchiha",
@@ -10010,6 +10491,7 @@ arrayEpisodios = [
     "nome": "Gaara e Shikamaru",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/85/Gaara_Playing.png/revision/latest/scale-to-width-down/350?cb=20161104072442",
+    "source":"1zpE5V_VKCrDuuFNs5owFutCic3y2XPlU",
     "personagens":[
         "Gaara",
         "Kankuru",
@@ -10027,6 +10509,7 @@ arrayEpisodios = [
     "nome": "Jiraiya e Kakashi",
     "filler": True,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/27/Sakumo_%26_Kakashi.png/revision/latest/scale-to-width-down/350?cb=20161110121024",
+    "source":"1v7aJo2L6KzBkbJYKC-rRnfwbKe-ORJ97",
     "personagens":[
         "Jiraiya",
         "Tsunade",
@@ -10044,6 +10527,7 @@ arrayEpisodios = [
     "nome": "Humanos Explosivos",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/e/e2/The_Exploding_Human.png/revision/latest/scale-to-width-down/350?cb=20161201115251",
+    "source":"174bqitMvM1emYvmg1uLxuJ5Fiux9ZIR0",
     "personagens":[
         "Sasuke Uchiha",
         "Chino",
@@ -10064,6 +10548,7 @@ arrayEpisodios = [
     "nome": "Coliseu",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c8/Coliseum.png/revision/latest/scale-to-width-down/250?cb=20161208125726",
+    "source":"1K74LXWAYI_Aaia7Bn9ExY7lgo-rD1Abz",
     "personagens":[
         "Sasuke Uchiha",
         "Chino",
@@ -10083,6 +10568,7 @@ arrayEpisodios = [
     "nome": "Fushin",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/31/Browse_icon.png/revision/latest?cb=20151125063353",
+    "source":"1_j_qIJEW9GFiNd7aYnfXS4WXO9OIJIOR",
     "personagens":[
         "Sasuke Uchiha",
         "Chino",
@@ -10098,6 +10584,7 @@ arrayEpisodios = [
     "nome": "Ketsuryugan",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/50/Chino_Ketsuryugan.png/revision/latest/scale-to-width-down/350?cb=20161222154307",
+    "source":"177eTEuAP3FCZHHZACZ1OXTwUShswM8Ch",
     "personagens":[
         "Sasuke Uchiha",
         "Chino",
@@ -10112,6 +10599,7 @@ arrayEpisodios = [
     "nome": "A Última Pessoa",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/4/45/Sasuke_Defeats_Shinobi.png/revision/latest/scale-to-width-down/350?cb=20170105191121",
+    "source":"17Yco_6iYl2291DkqwkjXPkGOVRJOiiJl",
     "personagens":[
         "Sasuke Uchiha",
         "Chino",
@@ -10133,6 +10621,7 @@ arrayEpisodios = [
     "nome": "A Situação",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/9/9b/Shinobi_Union.png/revision/latest/scale-to-width-down/350?cb=20170112161555",
+    "source":"1VDoJlxETipvqsuIZbHkMP8MLkXNuWCVw",
     "personagens":[
         "Shikamaru Nara",
         "Ru",
@@ -10154,6 +10643,7 @@ arrayEpisodios = [
     "nome": "Nuvens Escuras",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/3/33/Dark_Clouds.png/revision/latest/scale-to-width-down/350?cb=20170119144341",
+    "source":"1Xoc6vKNGnkKkwvnIGKxmtWOGb7LDzlle",
     "personagens":[
         "Shikamaru Nara",
         "Ru",
@@ -10168,6 +10658,7 @@ arrayEpisodios = [
     "nome": "Às Cegas",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/0/03/Shikamaru_Surrounded.png/revision/latest/scale-to-width-down/350?cb=20170126124850",
+    "source":"1zpm5OfUVdO2ZYEY_GY2S5_SLmzR3IitQ",
     "personagens":[
         "Shikamaru Nara",
         "Ru",
@@ -10181,6 +10672,7 @@ arrayEpisodios = [
     "nome": "Nuvem de Suspeitas",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/86/Cloud_of_Suspicion.png/revision/latest/scale-to-width-down/350?cb=20170202161136",
+    "source":"1nw0A7TAej7zn8wC79VqLaRmusgwBsQ2G",
     "personagens":[
         "Shikamaru Nara",
         "Ru",
@@ -10198,6 +10690,7 @@ arrayEpisodios = [
     "nome": "Alvorecer",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/8/8e/Dawn.png/revision/latest/scale-to-width-down/350?cb=20170210052524",
+    "source":"1HtWFC0XocRKE-Ri-p-nKCatyOMa0zJta",
     "personagens":[
         "Shikamaru Nara",
         "Ru",
@@ -10217,6 +10710,7 @@ arrayEpisodios = [
     "nome": "O Casamento do Naruto",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/7/72/Kakashi%27s_Announcement.png/revision/latest/scale-to-width-down/350?cb=20170216212120",
+    "source":"1qdfh8JKrHEG5yX20qfg96aAcfkDVynl9",
     "personagens":[
         "Iruka Umino",
         "Kakashi Hatake",
@@ -10244,6 +10738,7 @@ arrayEpisodios = [
     "nome": "Presente de Casamento Poderoso",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/1/1d/A_Full_Powered_Wedding_Gift.png/revision/latest/scale-to-width-down/350?cb=20170216212147",
+    "source":"1N3m2gjZxsBIKcIoijD-e429Qv1phj_4m",
     "personagens":[
         "Iruka Umino",
         "Teuchi",
@@ -10267,6 +10762,7 @@ arrayEpisodios = [
     "nome": "Vapor e Pílulas de Comida",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/b/b2/Food_Pills.png/revision/latest/scale-to-width-down/350?cb=20170223174946",
+    "source":"1QsfJ67wLwnBVjdkuykFnR84iCzPZdXck",
     "personagens":[
         "Iruka Umino",
         "Shikamaru Nara",
@@ -10282,6 +10778,7 @@ arrayEpisodios = [
     "nome": "O Presente do Kazekage",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/2/21/Gaara_Thinking.png/revision/latest/scale-to-width-down/350?cb=20170303011418",
+    "source":"1XbSZKLyV-G-3-z2nneo1qveITSksZDPW",
     "personagens":[
         "Iruka Umino",
         "Gaara",
@@ -10305,6 +10802,7 @@ arrayEpisodios = [
     "nome": "Última Missão",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/c/c9/The_Last_Mission.png/revision/latest/scale-to-width-down/350?cb=20170309115113",
+    "source":"1HJ_6Y-XTKGHUsO9LFbPxPWBwec9byl-j",
     "personagens":[
         "Iruka Umino",
         "Shino Aburame",
@@ -10322,6 +10820,7 @@ arrayEpisodios = [
     "nome": "Resultados da Missão Secreta",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/5/59/Konoha_11_Girls.png/revision/latest/scale-to-width-down/350?cb=20170317020140",
+    "source":"1YKUp7Ax5V_nUs-XCVkzPO81Ke3gPctco",
     "personagens":[
         "Iruka Umino",
         "Hinata Hyuga",
@@ -10347,6 +10846,7 @@ arrayEpisodios = [
     "nome": "Palavras de Felicitações",
     "filler": False,
     "thumbnail":"https://vignette.wikia.nocookie.net/naruto/images/a/a3/Naruto_%26_Hinata.png/revision/latest/scale-to-width-down/350?cb=20170323131836",
+    "source":"1dq2OJCpQIyboPobJN5w2aJ8xrNCsV6Tk",
     "personagens":[
         "Naruto Uzumaki",
         "Hinata Hyuga",
